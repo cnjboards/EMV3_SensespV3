@@ -1,0 +1,2430 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+.pio/build/project.checksum
+.pio/build/esp32dev/.sconsign311.dblite
+.pio/build/esp32dev/bootloader.bin
+.pio/build/esp32dev/firmware.bin
+.pio/build/esp32dev/firmware.elf
+.pio/build/esp32dev/firmware.map
+.pio/build/esp32dev/idedata.json
+.pio/build/esp32dev/longcmd-53d3abd385420374baff262c5c93b82f
+.pio/build/esp32dev/partitions.bin
+.pio/build/esp32dev/tmp72bsqipz.tmp
+.pio/build/esp32dev/tmpbs1ilmh0.tmp
+.pio/build/esp32dev/tmpjo_8box3.tmp
+.pio/build/esp32dev/tmpw8qgcrj4.tmp
+.pio/libdeps/esp32dev/integrity.dat
+.pio/libdeps/esp32dev/lv_conf.h
+.pio/libdeps/esp32dev/AceButton/.gitignore
+.pio/libdeps/esp32dev/AceButton/.piopm
+.pio/libdeps/esp32dev/AceButton/CHANGELOG.md
+.pio/libdeps/esp32dev/AceButton/CONTRIBUTING.md
+.pio/libdeps/esp32dev/AceButton/keywords.txt
+.pio/libdeps/esp32dev/AceButton/library.properties
+.pio/libdeps/esp32dev/AceButton/LICENSE
+.pio/libdeps/esp32dev/AceButton/README.md
+.pio/libdeps/esp32dev/AceButton/.github/workflows/aunit_tests.yml
+.pio/libdeps/esp32dev/AceButton/examples/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/ArrayButtons/ArrayButtons.ino
+.pio/libdeps/esp32dev/AceButton/examples/ArrayButtons/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/AutoBenchmark/AutoBenchmark.ino
+.pio/libdeps/esp32dev/AceButton/examples/AutoBenchmark/esp32.txt
+.pio/libdeps/esp32dev/AceButton/examples/AutoBenchmark/esp8266.txt
+.pio/libdeps/esp32dev/AceButton/examples/AutoBenchmark/generate_readme.py
+.pio/libdeps/esp32dev/AceButton/examples/AutoBenchmark/generate_table.awk
+.pio/libdeps/esp32dev/AceButton/examples/AutoBenchmark/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/AutoBenchmark/micro.txt
+.pio/libdeps/esp32dev/AceButton/examples/AutoBenchmark/nano.txt
+.pio/libdeps/esp32dev/AceButton/examples/AutoBenchmark/ProfilingButtonConfig.h
+.pio/libdeps/esp32dev/AceButton/examples/AutoBenchmark/README.md
+.pio/libdeps/esp32dev/AceButton/examples/AutoBenchmark/samd21.txt
+.pio/libdeps/esp32dev/AceButton/examples/AutoBenchmark/samd51.txt
+.pio/libdeps/esp32dev/AceButton/examples/AutoBenchmark/stm32.txt
+.pio/libdeps/esp32dev/AceButton/examples/CapacitiveButton/CapacitiveButton.ino
+.pio/libdeps/esp32dev/AceButton/examples/ClickVersusDoubleClickUsingBoth/ClickVersusDoubleClickUsingBoth.ino
+.pio/libdeps/esp32dev/AceButton/examples/ClickVersusDoubleClickUsingBoth/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/ClickVersusDoubleClickUsingReleased/ClickVersusDoubleClickUsingReleased.ino
+.pio/libdeps/esp32dev/AceButton/examples/ClickVersusDoubleClickUsingReleased/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/ClickVersusDoubleClickUsingSuppression/ClickVersusDoubleClickUsingSuppression.ino
+.pio/libdeps/esp32dev/AceButton/examples/ClickVersusDoubleClickUsingSuppression/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/Encoded16To4Buttons/Encoded16To4Buttons.ino
+.pio/libdeps/esp32dev/AceButton/examples/Encoded16To4Buttons/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/Encoded16To4Buttons/README.md
+.pio/libdeps/esp32dev/AceButton/examples/Encoded4To2Buttons/Encoded4To2Buttons.ino
+.pio/libdeps/esp32dev/AceButton/examples/Encoded4To2Buttons/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/Encoded4To2Buttons/README.md
+.pio/libdeps/esp32dev/AceButton/examples/Encoded8To3Buttons/Encoded8To3Buttons.ino
+.pio/libdeps/esp32dev/AceButton/examples/Encoded8To3Buttons/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/Encoded8To3Buttons/README.md
+.pio/libdeps/esp32dev/AceButton/examples/HeartBeat/HeartBeat.ino
+.pio/libdeps/esp32dev/AceButton/examples/HeartBeat/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/HelloButton/HelloButton.ino
+.pio/libdeps/esp32dev/AceButton/examples/HelloButton/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/LadderButtonCalibrator/LadderButtonCalibrator.ino
+.pio/libdeps/esp32dev/AceButton/examples/LadderButtonCalibrator/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/LadderButtons/LadderButtons.ino
+.pio/libdeps/esp32dev/AceButton/examples/LadderButtons/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/LadderButtons/README.md
+.pio/libdeps/esp32dev/AceButton/examples/LadderButtonsTiny/LadderButtonsTiny.ino
+.pio/libdeps/esp32dev/AceButton/examples/LadderButtonsTiny/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/MemoryBenchmark/attiny.txt
+.pio/libdeps/esp32dev/AceButton/examples/MemoryBenchmark/collect.sh
+.pio/libdeps/esp32dev/AceButton/examples/MemoryBenchmark/esp32.txt
+.pio/libdeps/esp32dev/AceButton/examples/MemoryBenchmark/esp8266.txt
+.pio/libdeps/esp32dev/AceButton/examples/MemoryBenchmark/generate_readme.py
+.pio/libdeps/esp32dev/AceButton/examples/MemoryBenchmark/generate_table.awk
+.pio/libdeps/esp32dev/AceButton/examples/MemoryBenchmark/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/MemoryBenchmark/MemoryBenchmark.ino
+.pio/libdeps/esp32dev/AceButton/examples/MemoryBenchmark/micro.txt
+.pio/libdeps/esp32dev/AceButton/examples/MemoryBenchmark/nano.txt
+.pio/libdeps/esp32dev/AceButton/examples/MemoryBenchmark/README.md
+.pio/libdeps/esp32dev/AceButton/examples/MemoryBenchmark/samd21.txt
+.pio/libdeps/esp32dev/AceButton/examples/MemoryBenchmark/samd51.txt
+.pio/libdeps/esp32dev/AceButton/examples/MemoryBenchmark/stm32.txt
+.pio/libdeps/esp32dev/AceButton/examples/MemoryBenchmark/validate_using_epoxy_duino.sh
+.pio/libdeps/esp32dev/AceButton/examples/PressVersusLongPress/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/PressVersusLongPress/PressVersusLongPress.ino
+.pio/libdeps/esp32dev/AceButton/examples/SimultaneousButtons/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/SimultaneousButtons/SimultaneousButtons.ino
+.pio/libdeps/esp32dev/AceButton/examples/SingleButton/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/SingleButton/SingleButton.ino
+.pio/libdeps/esp32dev/AceButton/examples/SingleButtonFast/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/SingleButtonFast/SingleButtonFast.ino
+.pio/libdeps/esp32dev/AceButton/examples/SingleButtonPullDown/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/SingleButtonPullDown/SingleButtonPullDown.ino
+.pio/libdeps/esp32dev/AceButton/examples/SingleButtonUsingIEventHandler/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/SingleButtonUsingIEventHandler/SingleButtonUsingIEventHandler.ino
+.pio/libdeps/esp32dev/AceButton/examples/Stopwatch/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/Stopwatch/Stopwatch.ino
+.pio/libdeps/esp32dev/AceButton/examples/ThreeButtonsUsingOneButtonConfig/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/ThreeButtonsUsingOneButtonConfig/ThreeButtonsUsingOneButtonConfig.ino
+.pio/libdeps/esp32dev/AceButton/examples/ThreeButtonsUsingOneButtonConfigFast/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/ThreeButtonsUsingOneButtonConfigFast/ThreeButtonsUsingOneButtonConfigFast.ino
+.pio/libdeps/esp32dev/AceButton/examples/TunerButtons/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/TunerButtons/TunerButtons.ino
+.pio/libdeps/esp32dev/AceButton/examples/TwoButtonsUsingOneButtonConfig/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/TwoButtonsUsingOneButtonConfig/TwoButtonsUsingOneButtonConfig.ino
+.pio/libdeps/esp32dev/AceButton/examples/TwoButtonsUsingOneButtonConfigFast/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/TwoButtonsUsingOneButtonConfigFast/TwoButtonsUsingOneButtonConfigFast.ino
+.pio/libdeps/esp32dev/AceButton/examples/TwoButtonsUsingTwoButtonConfigs/Makefile
+.pio/libdeps/esp32dev/AceButton/examples/TwoButtonsUsingTwoButtonConfigs/TwoButtonsUsingTwoButtonConfigs.ino
+.pio/libdeps/esp32dev/AceButton/src/AceButton.h
+.pio/libdeps/esp32dev/AceButton/src/ace_button/AceButton.cpp
+.pio/libdeps/esp32dev/AceButton/src/ace_button/AceButton.h
+.pio/libdeps/esp32dev/AceButton/src/ace_button/ButtonConfig.cpp
+.pio/libdeps/esp32dev/AceButton/src/ace_button/ButtonConfig.h
+.pio/libdeps/esp32dev/AceButton/src/ace_button/Encoded4To2ButtonConfig.h
+.pio/libdeps/esp32dev/AceButton/src/ace_button/Encoded8To3ButtonConfig.h
+.pio/libdeps/esp32dev/AceButton/src/ace_button/EncodedButtonConfig.cpp
+.pio/libdeps/esp32dev/AceButton/src/ace_button/EncodedButtonConfig.h
+.pio/libdeps/esp32dev/AceButton/src/ace_button/IEventHandler.h
+.pio/libdeps/esp32dev/AceButton/src/ace_button/LadderButtonConfig.cpp
+.pio/libdeps/esp32dev/AceButton/src/ace_button/LadderButtonConfig.h
+.pio/libdeps/esp32dev/AceButton/src/ace_button/fast/ButtonConfigFast1.h
+.pio/libdeps/esp32dev/AceButton/src/ace_button/fast/ButtonConfigFast2.h
+.pio/libdeps/esp32dev/AceButton/src/ace_button/fast/ButtonConfigFast3.h
+.pio/libdeps/esp32dev/AceButton/src/ace_button/testing/EventTracker.cpp
+.pio/libdeps/esp32dev/AceButton/src/ace_button/testing/EventTracker.h
+.pio/libdeps/esp32dev/AceButton/src/ace_button/testing/HelperForButtonConfig.h
+.pio/libdeps/esp32dev/AceButton/src/ace_button/testing/HelperForEncodedButtonConfig.h
+.pio/libdeps/esp32dev/AceButton/src/ace_button/testing/HelperForLadderButtonConfig.h
+.pio/libdeps/esp32dev/AceButton/src/ace_button/testing/TestableButtonConfig.h
+.pio/libdeps/esp32dev/AceButton/src/ace_button/testing/TestableEncodedButtonConfig.h
+.pio/libdeps/esp32dev/AceButton/src/ace_button/testing/TestableLadderButtonConfig.h
+.pio/libdeps/esp32dev/Adafruit ADS1X15/.piopm
+.pio/libdeps/esp32dev/Adafruit ADS1X15/Adafruit_ADS1X15.cpp
+.pio/libdeps/esp32dev/Adafruit ADS1X15/Adafruit_ADS1X15.h
+.pio/libdeps/esp32dev/Adafruit ADS1X15/keywords.txt
+.pio/libdeps/esp32dev/Adafruit ADS1X15/library.properties
+.pio/libdeps/esp32dev/Adafruit ADS1X15/license.txt
+.pio/libdeps/esp32dev/Adafruit ADS1X15/README.md
+.pio/libdeps/esp32dev/Adafruit ADS1X15/.github/ISSUE_TEMPLATE.md
+.pio/libdeps/esp32dev/Adafruit ADS1X15/.github/PULL_REQUEST_TEMPLATE.md
+.pio/libdeps/esp32dev/Adafruit ADS1X15/.github/workflows/githubci.yml
+.pio/libdeps/esp32dev/Adafruit ADS1X15/examples/comparator/comparator.ino
+.pio/libdeps/esp32dev/Adafruit ADS1X15/examples/continuous/continuous.ino
+.pio/libdeps/esp32dev/Adafruit ADS1X15/examples/differential/differential.ino
+.pio/libdeps/esp32dev/Adafruit ADS1X15/examples/nonblocking/nonblocking.ino
+.pio/libdeps/esp32dev/Adafruit ADS1X15/examples/singleended/singleended.ino
+.pio/libdeps/esp32dev/Adafruit BusIO/.piopm
+.pio/libdeps/esp32dev/Adafruit BusIO/Adafruit_BusIO_Register.cpp
+.pio/libdeps/esp32dev/Adafruit BusIO/Adafruit_BusIO_Register.h
+.pio/libdeps/esp32dev/Adafruit BusIO/Adafruit_I2CDevice.cpp
+.pio/libdeps/esp32dev/Adafruit BusIO/Adafruit_I2CDevice.h
+.pio/libdeps/esp32dev/Adafruit BusIO/Adafruit_I2CRegister.h
+.pio/libdeps/esp32dev/Adafruit BusIO/Adafruit_SPIDevice.cpp
+.pio/libdeps/esp32dev/Adafruit BusIO/Adafruit_SPIDevice.h
+.pio/libdeps/esp32dev/Adafruit BusIO/CMakeLists.txt
+.pio/libdeps/esp32dev/Adafruit BusIO/component.mk
+.pio/libdeps/esp32dev/Adafruit BusIO/library.properties
+.pio/libdeps/esp32dev/Adafruit BusIO/LICENSE
+.pio/libdeps/esp32dev/Adafruit BusIO/README.md
+.pio/libdeps/esp32dev/Adafruit BusIO/.github/ISSUE_TEMPLATE.md
+.pio/libdeps/esp32dev/Adafruit BusIO/.github/PULL_REQUEST_TEMPLATE.md
+.pio/libdeps/esp32dev/Adafruit BusIO/.github/workflows/githubci.yml
+.pio/libdeps/esp32dev/Adafruit BusIO/examples/i2c_address_detect/i2c_address_detect.ino
+.pio/libdeps/esp32dev/Adafruit BusIO/examples/i2c_readwrite/i2c_readwrite.ino
+.pio/libdeps/esp32dev/Adafruit BusIO/examples/i2c_registers/i2c_registers.ino
+.pio/libdeps/esp32dev/Adafruit BusIO/examples/i2corspi_register/i2corspi_register.ino
+.pio/libdeps/esp32dev/Adafruit BusIO/examples/spi_modetest/spi_modetest.ino
+.pio/libdeps/esp32dev/Adafruit BusIO/examples/spi_readwrite/spi_readwrite.ino
+.pio/libdeps/esp32dev/Adafruit BusIO/examples/spi_register_bits/spi_register_bits.ino
+.pio/libdeps/esp32dev/Adafruit BusIO/examples/spi_registers/spi_registers.ino
+.pio/libdeps/esp32dev/ArduinoJson/.piopm
+.pio/libdeps/esp32dev/ArduinoJson/ArduinoJson.h
+.pio/libdeps/esp32dev/ArduinoJson/library.json
+.pio/libdeps/esp32dev/ArduinoJson/library.properties
+.pio/libdeps/esp32dev/ArduinoJson/LICENSE.txt
+.pio/libdeps/esp32dev/ArduinoJson/README.md
+.pio/libdeps/esp32dev/ArduinoJson/examples/JsonConfigFile/JsonConfigFile.ino
+.pio/libdeps/esp32dev/ArduinoJson/examples/JsonFilterExample/JsonFilterExample.ino
+.pio/libdeps/esp32dev/ArduinoJson/examples/JsonGeneratorExample/JsonGeneratorExample.ino
+.pio/libdeps/esp32dev/ArduinoJson/examples/JsonHttpClient/JsonHttpClient.ino
+.pio/libdeps/esp32dev/ArduinoJson/examples/JsonParserExample/JsonParserExample.ino
+.pio/libdeps/esp32dev/ArduinoJson/examples/JsonServer/JsonServer.ino
+.pio/libdeps/esp32dev/ArduinoJson/examples/JsonUdpBeacon/JsonUdpBeacon.ino
+.pio/libdeps/esp32dev/ArduinoJson/examples/MsgPackParser/MsgPackParser.ino
+.pio/libdeps/esp32dev/ArduinoJson/examples/ProgmemExample/ProgmemExample.ino
+.pio/libdeps/esp32dev/ArduinoJson/examples/StringExample/StringExample.ino
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson.h
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/CMakeLists.txt
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/compatibility.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Configuration.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Namespace.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/version.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Array/ArrayData.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Array/ArrayImpl.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Array/ElementProxy.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Array/JsonArray.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Array/JsonArrayConst.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Array/JsonArrayIterator.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Array/Utilities.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Collection/CollectionData.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Collection/CollectionImpl.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Deserialization/DeserializationError.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Deserialization/DeserializationOptions.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Deserialization/deserialize.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Deserialization/Filter.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Deserialization/NestingLimit.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Deserialization/Reader.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Deserialization/Readers/ArduinoStreamReader.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Deserialization/Readers/ArduinoStringReader.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Deserialization/Readers/FlashReader.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Deserialization/Readers/IteratorReader.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Deserialization/Readers/RamReader.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Deserialization/Readers/StdStreamReader.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Deserialization/Readers/VariantReader.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Document/JsonDocument.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Json/EscapeSequence.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Json/JsonDeserializer.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Json/JsonSerializer.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Json/Latch.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Json/PrettyJsonSerializer.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Json/TextFormatter.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Json/Utf8.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Json/Utf16.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Memory/Alignment.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Memory/Allocator.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Memory/ResourceManager.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Memory/ResourceManagerImpl.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Memory/StringBuffer.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Memory/StringBuilder.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Memory/StringNode.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Memory/StringPool.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Memory/VariantPool.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Memory/VariantPoolImpl.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Memory/VariantPoolList.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Misc/SerializedValue.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/MsgPack/endianness.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/MsgPack/ieee754.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/MsgPack/MsgPackBinary.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/MsgPack/MsgPackDeserializer.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/MsgPack/MsgPackExtension.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/MsgPack/MsgPackSerializer.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Numbers/arithmeticCompare.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Numbers/convertNumber.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Numbers/FloatParts.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Numbers/FloatTraits.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Numbers/JsonFloat.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Numbers/JsonInteger.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Numbers/parseNumber.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Object/JsonObject.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Object/JsonObjectConst.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Object/JsonObjectIterator.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Object/JsonPair.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Object/MemberProxy.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Object/ObjectData.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Object/ObjectImpl.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/alias_cast.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/assert.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/attributes.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/ctype.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/integer.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/limits.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/math.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/pgmspace_generic.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/pgmspace.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/preprocessor.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/utility.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/mpl/max.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/conditional.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/declval.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/enable_if.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/function_traits.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/integral_constant.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_array.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_base_of.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_class.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_const.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_convertible.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_enum.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_floating_point.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_integral.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_pointer.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_same.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_signed.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/is_unsigned.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/make_unsigned.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/remove_const.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/remove_cv.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/remove_reference.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/type_identity.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Polyfills/type_traits/void_t.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Serialization/CountingDecorator.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Serialization/measure.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Serialization/serialize.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Serialization/Writer.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Serialization/Writers/ArduinoStringWriter.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Serialization/Writers/DummyWriter.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Serialization/Writers/PrintWriter.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Serialization/Writers/StaticStringWriter.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Serialization/Writers/StdStreamWriter.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Serialization/Writers/StdStringWriter.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Strings/IsString.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Strings/JsonString.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Strings/StringAdapter.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Strings/StringAdapters.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Strings/StringTraits.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Strings/Adapters/FlashString.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Strings/Adapters/JsonString.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Strings/Adapters/RamString.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Strings/Adapters/StringObject.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/Converter.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/ConverterImpl.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/JsonVariant.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/JsonVariantConst.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/JsonVariantCopier.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/JsonVariantVisitor.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/VariantAttorney.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/VariantCompare.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/VariantContent.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/VariantData.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/VariantDataVisitor.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/VariantOperators.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/VariantRefBase.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/VariantRefBaseImpl.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/VariantSlot.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/VariantTag.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/VariantTo.hpp
+.pio/libdeps/esp32dev/NMEA2000-library/.gitattributes
+.pio/libdeps/esp32dev/NMEA2000-library/.gitignore
+.pio/libdeps/esp32dev/NMEA2000-library/.piopm
+.pio/libdeps/esp32dev/NMEA2000-library/.travis.yml
+.pio/libdeps/esp32dev/NMEA2000-library/CMakeLists.txt
+.pio/libdeps/esp32dev/NMEA2000-library/library.json
+.pio/libdeps/esp32dev/NMEA2000-library/library.properties
+.pio/libdeps/esp32dev/NMEA2000-library/README.adoc
+.pio/libdeps/esp32dev/NMEA2000-library/.github/workflows/doxygen-gh-pages.yml
+.pio/libdeps/esp32dev/NMEA2000-library/Documents/NMEA2000_MainDocument.md
+.pio/libdeps/esp32dev/NMEA2000-library/Documents/src/1_mainpage.md
+.pio/libdeps/esp32dev/NMEA2000-library/Documents/src/2_libRef.md
+.pio/libdeps/esp32dev/NMEA2000-library/Documents/src/3_hwSetup.md
+.pio/libdeps/esp32dev/NMEA2000-library/Documents/src/4_gettingStarted.md
+.pio/libdeps/esp32dev/NMEA2000-library/Documents/src/5_supportedMsg.md
+.pio/libdeps/esp32dev/NMEA2000-library/Documents/src/6_developInfo.md
+.pio/libdeps/esp32dev/NMEA2000-library/Documents/src/7_glossary.md
+.pio/libdeps/esp32dev/NMEA2000-library/Documents/src/changes.md
+.pio/libdeps/esp32dev/NMEA2000-library/Documents/src/DoxyConf
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/ActisenseListener/ActisenseListener.ino
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/ActisenseListener/README.md
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/ActisenseListenerSender/ActisenseListenerSender.ino
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/ArduinoGateway/ArduinoGateway.ino
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/BatteryMonitor/BatteryMonitor.ino
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/DataDisplay/DataDisplay.ino
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/DataDisplay2/DataDisplay2.ino
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/DataDisplay2/README.md
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/DeviceAnalyzer/DeviceAnalyzer.ino
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/ESP32/NMEA2000ToWiFiAsSeaSmart/BoardSerialNumber.cpp
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/ESP32/NMEA2000ToWiFiAsSeaSmart/BoardSerialNumber.h
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/ESP32/NMEA2000ToWiFiAsSeaSmart/List.h
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/ESP32/NMEA2000ToWiFiAsSeaSmart/N2kDataToNMEA0183.cpp
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/ESP32/NMEA2000ToWiFiAsSeaSmart/N2kDataToNMEA0183.h
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/ESP32/NMEA2000ToWiFiAsSeaSmart/NMEA2000ToWiFiAsSeaSmart.ino
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/ESP32/NMEA2000ToWiFiAsSeaSmart/README.adoc
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/MessageSender/MessageSender.ino
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/MessageSender/README.md
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/MultiDevice/MultiDevice.ino
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/NMEA2000ToNMEA0183/BoardSerialNumber.cpp
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/NMEA2000ToNMEA0183/BoardSerialNumber.h
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/NMEA2000ToNMEA0183/main.cpp
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/NMEA2000ToNMEA0183/N2kDataToNMEA0183.cpp
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/NMEA2000ToNMEA0183/N2kDataToNMEA0183.h
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/NMEA2000ToNMEA0183/N2kToNMEA0183.cbp
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/NMEA2000ToNMEA0183/N2kToNMEA0183.depend
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/NMEA2000ToNMEA0183/N2kToNMEA0183.layout
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/NMEA2000ToNMEA0183/NMEA2000ToNMEA0183.ino
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/NMEA2000ToNMEA0183/README.adoc
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/TeensyActisenseListenerSender/TeensyActisenseListenerSender.ino
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/TemperatureMonitor/TemperatureMonitor.ino
+.pio/libdeps/esp32dev/NMEA2000-library/Examples/WindMonitor/WindMonitor.ino
+.pio/libdeps/esp32dev/NMEA2000-library/scripts/cmake.sh
+.pio/libdeps/esp32dev/NMEA2000-library/src/ActisenseReader.cpp
+.pio/libdeps/esp32dev/NMEA2000-library/src/ActisenseReader.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/CMakeLists.txt
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kCANMsg.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kDef.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kDeviceList.cpp
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kDeviceList.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kGroupFunction.cpp
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kGroupFunction.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kGroupFunctionDefaultHandlers.cpp
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kGroupFunctionDefaultHandlers.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kMaretron.cpp
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kMaretron.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kMessages.cpp
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kMessages.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kMessagesEnumToStr.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kMsg.cpp
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kMsg.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kStream.cpp
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kStream.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kTimer.cpp
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kTimer.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/N2kTypes.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/NMEA2000_CAN.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/NMEA2000_CompilerDefns.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/NMEA2000.cpp
+.pio/libdeps/esp32dev/NMEA2000-library/src/NMEA2000.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/NMEA2000StdTypes.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/RingBuffer.h
+.pio/libdeps/esp32dev/NMEA2000-library/src/RingBuffer.tpp
+.pio/libdeps/esp32dev/NMEA2000-library/src/Seasmart.cpp
+.pio/libdeps/esp32dev/NMEA2000-library/src/Seasmart.h
+.pio/libdeps/esp32dev/NMEA2000-library/third-party/catch/catch.cpp
+.pio/libdeps/esp32dev/NMEA2000-library/third-party/catch/catch.hpp
+.pio/libdeps/esp32dev/NMEA2000-library/third-party/catch/CMakeLists.txt
+.pio/libdeps/esp32dev/NMEA2000_esp32/.gitattributes
+.pio/libdeps/esp32dev/NMEA2000_esp32/.gitignore
+.pio/libdeps/esp32dev/NMEA2000_esp32/.piopm
+.pio/libdeps/esp32dev/NMEA2000_esp32/ESP32_CAN_def.h
+.pio/libdeps/esp32dev/NMEA2000_esp32/library.properties
+.pio/libdeps/esp32dev/NMEA2000_esp32/NMEA2000_esp32.cpp
+.pio/libdeps/esp32dev/NMEA2000_esp32/NMEA2000_esp32.h
+.pio/libdeps/esp32dev/NMEA2000_esp32/README.adoc
+.pio/libdeps/esp32dev/OneWire/.gitignore
+.pio/libdeps/esp32dev/OneWire/.piopm
+.pio/libdeps/esp32dev/OneWire/library.json
+.pio/libdeps/esp32dev/OneWire/LICENSE
+.pio/libdeps/esp32dev/OneWire/onewire_temperature_example.cpp
+.pio/libdeps/esp32dev/OneWire/platformio.ini
+.pio/libdeps/esp32dev/OneWire/README.md
+.pio/libdeps/esp32dev/OneWire/.github/workflows/test.yml
+.pio/libdeps/esp32dev/OneWire/ci/platformio-esp32dev.ini
+.pio/libdeps/esp32dev/OneWire/ci/README.md
+.pio/libdeps/esp32dev/OneWire/ci/run-ci.sh
+.pio/libdeps/esp32dev/OneWire/examples/onewire_temperature/onewire_temperature_example.cpp
+.pio/libdeps/esp32dev/OneWire/examples/onewire_temperature/README.md
+.pio/libdeps/esp32dev/OneWire/include/README
+.pio/libdeps/esp32dev/OneWire/lib/README
+.pio/libdeps/esp32dev/OneWire/src/main.cpp
+.pio/libdeps/esp32dev/OneWire/src/sensesp_onewire/onewire_temperature.cpp
+.pio/libdeps/esp32dev/OneWire/src/sensesp_onewire/onewire_temperature.h
+.pio/libdeps/esp32dev/OneWireNg/.gitignore
+.pio/libdeps/esp32dev/OneWireNg/.mbedignore
+.pio/libdeps/esp32dev/OneWireNg/.piopm
+.pio/libdeps/esp32dev/OneWireNg/.ycm_extra_conf.py
+.pio/libdeps/esp32dev/OneWireNg/CMakeLists.txt
+.pio/libdeps/esp32dev/OneWireNg/component.mk
+.pio/libdeps/esp32dev/OneWireNg/Doxyfile
+.pio/libdeps/esp32dev/OneWireNg/Kconfig
+.pio/libdeps/esp32dev/OneWireNg/keywords.txt
+.pio/libdeps/esp32dev/OneWireNg/library.properties
+.pio/libdeps/esp32dev/OneWireNg/LICENSE
+.pio/libdeps/esp32dev/OneWireNg/mbed_lib.json
+.pio/libdeps/esp32dev/OneWireNg/README.md
+.pio/libdeps/esp32dev/OneWireNg/.github/arduino-ci/Dockerfile
+.pio/libdeps/esp32dev/OneWireNg/.github/espidf-ci/Dockerfile
+.pio/libdeps/esp32dev/OneWireNg/.github/mbedos-ci/Dockerfile
+.pio/libdeps/esp32dev/OneWireNg/.github/picosdk-ci/Dockerfile
+.pio/libdeps/esp32dev/OneWireNg/.github/platformio-ci/Dockerfile
+.pio/libdeps/esp32dev/OneWireNg/.github/workflows/arduino-builds.yml
+.pio/libdeps/esp32dev/OneWireNg/.github/workflows/espidf-builds.yml
+.pio/libdeps/esp32dev/OneWireNg/.github/workflows/mbedos-builds.yml
+.pio/libdeps/esp32dev/OneWireNg/.github/workflows/picosdk-builds.yml
+.pio/libdeps/esp32dev/OneWireNg/.github/workflows/platformio-builds.yml
+.pio/libdeps/esp32dev/OneWireNg/.github/workflows/ut.yml
+.pio/libdeps/esp32dev/OneWireNg/examples/README.md
+.pio/libdeps/esp32dev/OneWireNg/examples/arduino/DS2431/DS2431.ino
+.pio/libdeps/esp32dev/OneWireNg/examples/arduino/DallasTemperature/DallasTemperature.ino
+.pio/libdeps/esp32dev/OneWireNg/examples/arduino/MAX31850/MAX31850.ino
+.pio/libdeps/esp32dev/OneWireNg/examples/arduino/OverdriveMode/OverdriveMode.ino
+.pio/libdeps/esp32dev/OneWireNg/examples/esp-idf/DS2431/CMakeLists.txt
+.pio/libdeps/esp32dev/OneWireNg/examples/esp-idf/DS2431/Makefile
+.pio/libdeps/esp32dev/OneWireNg/examples/esp-idf/DS2431/sdkconfig.defaults
+.pio/libdeps/esp32dev/OneWireNg/examples/esp-idf/DS2431/main/CMakeLists.txt
+.pio/libdeps/esp32dev/OneWireNg/examples/esp-idf/DS2431/main/component.mk
+.pio/libdeps/esp32dev/OneWireNg/examples/esp-idf/DS2431/main/DS2431.cpp
+.pio/libdeps/esp32dev/OneWireNg/examples/esp-idf/DS2431/main/Kconfig.projbuild
+.pio/libdeps/esp32dev/OneWireNg/examples/esp-idf/DallasTemperature/CMakeLists.txt
+.pio/libdeps/esp32dev/OneWireNg/examples/esp-idf/DallasTemperature/Makefile
+.pio/libdeps/esp32dev/OneWireNg/examples/esp-idf/DallasTemperature/main/CMakeLists.txt
+.pio/libdeps/esp32dev/OneWireNg/examples/esp-idf/DallasTemperature/main/component.mk
+.pio/libdeps/esp32dev/OneWireNg/examples/esp-idf/DallasTemperature/main/DallasTemperature.cpp
+.pio/libdeps/esp32dev/OneWireNg/examples/esp-idf/DallasTemperature/main/Kconfig.projbuild
+.pio/libdeps/esp32dev/OneWireNg/examples/mbed-os/DS2431/.mbed
+.pio/libdeps/esp32dev/OneWireNg/examples/mbed-os/DS2431/DS2431.cpp
+.pio/libdeps/esp32dev/OneWireNg/examples/mbed-os/DS2431/mbed_app.json
+.pio/libdeps/esp32dev/OneWireNg/examples/mbed-os/DallasTemperature/.mbed
+.pio/libdeps/esp32dev/OneWireNg/examples/mbed-os/DallasTemperature/DallasTemperature.cpp
+.pio/libdeps/esp32dev/OneWireNg/examples/mbed-os/DallasTemperature/mbed_app.json
+.pio/libdeps/esp32dev/OneWireNg/examples/pico-sdk/DS2431/CMakeLists.txt
+.pio/libdeps/esp32dev/OneWireNg/examples/pico-sdk/DS2431/DS2431.cpp
+.pio/libdeps/esp32dev/OneWireNg/examples/pico-sdk/DS2431/pico_sdk_import.cmake
+.pio/libdeps/esp32dev/OneWireNg/examples/pico-sdk/DallasTemperature/CMakeLists.txt
+.pio/libdeps/esp32dev/OneWireNg/examples/pico-sdk/DallasTemperature/DallasTemperature.cpp
+.pio/libdeps/esp32dev/OneWireNg/examples/pico-sdk/DallasTemperature/pico_sdk_import.cmake
+.pio/libdeps/esp32dev/OneWireNg/src/OneWire.h
+.pio/libdeps/esp32dev/OneWireNg/src/OneWireNg_BitBang.cpp
+.pio/libdeps/esp32dev/OneWireNg/src/OneWireNg_BitBang.h
+.pio/libdeps/esp32dev/OneWireNg/src/OneWireNg_Config.h
+.pio/libdeps/esp32dev/OneWireNg/src/OneWireNg_CurrentPlatform.h
+.pio/libdeps/esp32dev/OneWireNg/src/OneWireNg.cpp
+.pio/libdeps/esp32dev/OneWireNg/src/OneWireNg.h
+.pio/libdeps/esp32dev/OneWireNg/src/drivers/DSTherm.cpp
+.pio/libdeps/esp32dev/OneWireNg/src/drivers/DSTherm.h
+.pio/libdeps/esp32dev/OneWireNg/src/drivers/MAX31850.h
+.pio/libdeps/esp32dev/OneWireNg/src/platform/OneWireNg_ArduinoAVR.h
+.pio/libdeps/esp32dev/OneWireNg/src/platform/OneWireNg_ArduinoIdfESP32.cpp
+.pio/libdeps/esp32dev/OneWireNg/src/platform/OneWireNg_ArduinoIdfESP32.h
+.pio/libdeps/esp32dev/OneWireNg/src/platform/OneWireNg_ArduinoIdfESP8266.cpp
+.pio/libdeps/esp32dev/OneWireNg/src/platform/OneWireNg_ArduinoIdfESP8266.h
+.pio/libdeps/esp32dev/OneWireNg/src/platform/OneWireNg_ArduinoMbedHAL.h
+.pio/libdeps/esp32dev/OneWireNg/src/platform/OneWireNg_ArduinoMegaAVR.h
+.pio/libdeps/esp32dev/OneWireNg/src/platform/OneWireNg_ArduinoSAM.h
+.pio/libdeps/esp32dev/OneWireNg/src/platform/OneWireNg_ArduinoSAMD.h
+.pio/libdeps/esp32dev/OneWireNg/src/platform/OneWireNg_ArduinoSTM32.h
+.pio/libdeps/esp32dev/OneWireNg/src/platform/OneWireNg_PicoRP2040.h
+.pio/libdeps/esp32dev/OneWireNg/src/platform/OneWireNg_PicoRP2040PIO.h
+.pio/libdeps/esp32dev/OneWireNg/src/platform/Platform_Delay.cpp
+.pio/libdeps/esp32dev/OneWireNg/src/platform/Platform_Delay.h
+.pio/libdeps/esp32dev/OneWireNg/src/platform/Platform_FlashMem.h
+.pio/libdeps/esp32dev/OneWireNg/src/platform/Platform_New.h
+.pio/libdeps/esp32dev/OneWireNg/src/platform/Platform_TimeCritical.cpp
+.pio/libdeps/esp32dev/OneWireNg/src/platform/Platform_TimeCritical.h
+.pio/libdeps/esp32dev/OneWireNg/src/platform/rp2040/w1.pio
+.pio/libdeps/esp32dev/OneWireNg/src/platform/rp2040/w1.pio.h
+.pio/libdeps/esp32dev/OneWireNg/src/utils/Placeholder.h
+.pio/libdeps/esp32dev/ReactESP/.bumpversion.cfg
+.pio/libdeps/esp32dev/ReactESP/.clang-format
+.pio/libdeps/esp32dev/ReactESP/.gitignore
+.pio/libdeps/esp32dev/ReactESP/.piopm
+.pio/libdeps/esp32dev/ReactESP/.travis.yml
+.pio/libdeps/esp32dev/ReactESP/Doxyfile
+.pio/libdeps/esp32dev/ReactESP/library.json
+.pio/libdeps/esp32dev/ReactESP/library.properties
+.pio/libdeps/esp32dev/ReactESP/LICENSE
+.pio/libdeps/esp32dev/ReactESP/platformio.ini
+.pio/libdeps/esp32dev/ReactESP/README.md
+.pio/libdeps/esp32dev/ReactESP/VERSION
+.pio/libdeps/esp32dev/ReactESP/examples/minimal/platformio.ini
+.pio/libdeps/esp32dev/ReactESP/examples/minimal/lib/readme.txt
+.pio/libdeps/esp32dev/ReactESP/examples/minimal/src/main.cpp
+.pio/libdeps/esp32dev/ReactESP/examples/torture_test/platformio.ini
+.pio/libdeps/esp32dev/ReactESP/examples/torture_test/lib/readme.txt
+.pio/libdeps/esp32dev/ReactESP/examples/torture_test/src/main.cpp
+.pio/libdeps/esp32dev/ReactESP/lib/readme.txt
+.pio/libdeps/esp32dev/ReactESP/scripts/update_autogen.sh
+.pio/libdeps/esp32dev/ReactESP/src/ReactESP.cpp
+.pio/libdeps/esp32dev/ReactESP/src/ReactESP.h
+.pio/libdeps/esp32dev/SensESP/.bumpversion.cfg
+.pio/libdeps/esp32dev/SensESP/.clang-format
+.pio/libdeps/esp32dev/SensESP/.editorconfig
+.pio/libdeps/esp32dev/SensESP/.gitignore
+.pio/libdeps/esp32dev/SensESP/.piopm
+.pio/libdeps/esp32dev/SensESP/.travis.yml
+.pio/libdeps/esp32dev/SensESP/CHANGELOG.md
+.pio/libdeps/esp32dev/SensESP/Doxyfile
+.pio/libdeps/esp32dev/SensESP/extra_script.py
+.pio/libdeps/esp32dev/SensESP/library.json
+.pio/libdeps/esp32dev/SensESP/library.properties
+.pio/libdeps/esp32dev/SensESP/LICENSE
+.pio/libdeps/esp32dev/SensESP/platformio.ini
+.pio/libdeps/esp32dev/SensESP/README.md
+.pio/libdeps/esp32dev/SensESP/RELEASE_PROCESS.md
+.pio/libdeps/esp32dev/SensESP/run
+.pio/libdeps/esp32dev/SensESP/sens_esp_uml.mdj
+.pio/libdeps/esp32dev/SensESP/VERSION
+.pio/libdeps/esp32dev/SensESP/.github/workflows/test.yml
+.pio/libdeps/esp32dev/SensESP/ci/platformio-esp32dev.ini
+.pio/libdeps/esp32dev/SensESP/ci/README.md
+.pio/libdeps/esp32dev/SensESP/ci/run-ci.sh
+.pio/libdeps/esp32dev/SensESP/examples/analog_input.cpp
+.pio/libdeps/esp32dev/SensESP/examples/async_repeat_sensor.cpp
+.pio/libdeps/esp32dev/SensESP/examples/chain_counter.cpp
+.pio/libdeps/esp32dev/SensESP/examples/constant_sensor.cpp
+.pio/libdeps/esp32dev/SensESP/examples/freertos_tasks.cpp
+.pio/libdeps/esp32dev/SensESP/examples/hysteresis.cpp
+.pio/libdeps/esp32dev/SensESP/examples/join_and_zip.cpp
+.pio/libdeps/esp32dev/SensESP/examples/lambda_transform.cpp
+.pio/libdeps/esp32dev/SensESP/examples/manual_networking.cpp
+.pio/libdeps/esp32dev/SensESP/examples/minimal_app.cpp
+.pio/libdeps/esp32dev/SensESP/examples/platformio.ini
+.pio/libdeps/esp32dev/SensESP/examples/raw_json.cpp
+.pio/libdeps/esp32dev/SensESP/examples/relay_control.cpp
+.pio/libdeps/esp32dev/SensESP/examples/repeat_sensor_analog_input.cpp
+.pio/libdeps/esp32dev/SensESP/examples/repeat_transform.cpp
+.pio/libdeps/esp32dev/SensESP/examples/rpm_counter.cpp
+.pio/libdeps/esp32dev/SensESP/examples/temperature_sender.cpp
+.pio/libdeps/esp32dev/SensESP/examples/time_counter.cpp
+.pio/libdeps/esp32dev/SensESP/examples/dual_thermocouple_sensors/max6675_signalk_n2k.cpp
+.pio/libdeps/esp32dev/SensESP/examples/dual_thermocouple_sensors/max6675_signalk.cpp
+.pio/libdeps/esp32dev/SensESP/examples/dual_thermocouple_sensors/platformio.ini
+.pio/libdeps/esp32dev/SensESP/examples/fuel_level_sensor/fuel_level_sensor_example.cpp
+.pio/libdeps/esp32dev/SensESP/examples/fuel_level_sensor/README.md
+.pio/libdeps/esp32dev/SensESP/examples/milone_level_sensor/milone_level_sensor.cpp
+.pio/libdeps/esp32dev/SensESP/examples/milone_level_sensor/README.md
+.pio/libdeps/esp32dev/SensESP/examples/smart_switch/remote_switch_example.cpp
+.pio/libdeps/esp32dev/SensESP/examples/smart_switch/smart_switch_example.cpp
+.pio/libdeps/esp32dev/SensESP/frontend/.eslintrc.js
+.pio/libdeps/esp32dev/SensESP/frontend/.gitignore
+.pio/libdeps/esp32dev/SensESP/frontend/.prettierignore
+.pio/libdeps/esp32dev/SensESP/frontend/.prettierrc
+.pio/libdeps/esp32dev/SensESP/frontend/package.json
+.pio/libdeps/esp32dev/SensESP/frontend/pnpm-lock.yaml
+.pio/libdeps/esp32dev/SensESP/frontend/README.md
+.pio/libdeps/esp32dev/SensESP/frontend/tsconfig.json
+.pio/libdeps/esp32dev/SensESP/frontend/vite.config.ts
+.pio/libdeps/esp32dev/SensESP/frontend/mock/api-config.mock.ts
+.pio/libdeps/esp32dev/SensESP/frontend/mock/api-info.mock.ts
+.pio/libdeps/esp32dev/SensESP/frontend/mock/api-routes.mock.ts
+.pio/libdeps/esp32dev/SensESP/frontend/mock/api-signalk.mock.ts
+.pio/libdeps/esp32dev/SensESP/frontend/mock/api-wifi.mock.ts
+.pio/libdeps/esp32dev/SensESP/frontend/scss/styles.scss
+.pio/libdeps/esp32dev/SensESP/frontend/src/App.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/config.ts
+.pio/libdeps/esp32dev/SensESP/frontend/src/index.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/common/configAPIClient.ts
+.pio/libdeps/esp32dev/SensESP/frontend/src/common/InputDirtyContext.ts
+.pio/libdeps/esp32dev/SensESP/frontend/src/common/jsonTypes.ts
+.pio/libdeps/esp32dev/SensESP/frontend/src/common/NavPathContext.ts
+.pio/libdeps/esp32dev/SensESP/frontend/src/common/RestartRequiredContext.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/components/Card.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/components/Collapse.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/components/DataLoader.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/components/Form.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/components/Header.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/components/Tab.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/components/ToastMessage.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/components/useToast.ts
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/_404.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/AppPage.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/PageContents.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/PageHeading.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/Root.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/Configuration/ConfigCard.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/Configuration/ConfigCards.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/Configuration/index.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/Home/index.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/SignalK/index.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/SignalK/SignalKSettingsPanel.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/Status/index.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/Status/InfoGroup.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/Status/InfoGroups.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/Status/InfoItem.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/System/index.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/WiFi/CheckboxAccordion.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/WiFi/index.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/WiFi/NetworkList.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/WiFi/SingleClientConfigPanel.tsx
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/WiFi/WiFiSettingsConfig.ts
+.pio/libdeps/esp32dev/SensESP/frontend/src/pages/WiFi/WiFiSettingsPanel.tsx
+.pio/libdeps/esp32dev/SensESP/frontend-plugins/sample-plugin-js/.gitignore
+.pio/libdeps/esp32dev/SensESP/frontend-plugins/sample-plugin-js/package.json
+.pio/libdeps/esp32dev/SensESP/frontend-plugins/sample-plugin-js/pnpm-lock.yaml
+.pio/libdeps/esp32dev/SensESP/frontend-plugins/sample-plugin-js/src/app.jsx
+.pio/libdeps/esp32dev/SensESP/frontend-plugins/sample-plugin-js/src/main.jsx
+.pio/libdeps/esp32dev/SensESP/frontend-plugins/sample-plugin-js/src/sensesp-plugin.jsx
+.pio/libdeps/esp32dev/SensESP/lib/README
+.pio/libdeps/esp32dev/SensESP/logo/SensESP_logo.afdesign
+.pio/libdeps/esp32dev/SensESP/scripts/convert_html.py
+.pio/libdeps/esp32dev/SensESP/scripts/update_autogen.sh
+.pio/libdeps/esp32dev/SensESP/src/sensesp_app_builder.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp_app.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp_app.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp_base_app_builder.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp_base_app.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp_base_app.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp_minimal_app_builder.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp_minimal_app.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp_minimal_app.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/sensesp_version.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/controllers/smart_switch_controller.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/controllers/smart_switch_controller.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/controllers/system_status_controller.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/controllers/system_status_controller.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/discovery.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/discovery.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/http_authenticator.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/http_authenticator.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/http_server.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/http_server.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/networking.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/networking.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/ota.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/ota.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/wifi_state.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/web/app_command_handler.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/web/app_command_handler.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/web/base_command_handler.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/web/base_command_handler.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/web/config_handler.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/web/config_handler.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/web/css_bootstrap.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/web/index.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/web/js_jsoneditor.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/web/js_sensesp.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/web/static_file_data.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/web/static_file_handler.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/web/static_file_handler.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/net/web/autogen/frontend_files.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/sensors/analog_input.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/sensors/analog_input.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/sensors/analog_reader.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/sensors/constant_sensor.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/sensors/constant_sensor.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/sensors/digital_input.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/sensors/digital_input.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/sensors/digital_output.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/sensors/digital_output.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/sensors/sensor.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/sensors/sensor.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/sensors/system_info.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/sensors/system_info.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_delta_queue.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_delta_queue.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_emitter.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_emitter.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_listener.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_listener.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_metadata.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_metadata.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_output.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_output.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_position.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_position.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_put_request_listener.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_put_request_listener.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_put_request.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_put_request.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_time.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_time.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_value_listener.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_ws_client.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_ws_client.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/async_response_handler.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/base_button.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/button.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/button.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/configurable.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/configurable.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/expiring_value.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/filesystem.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/filesystem.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/hash.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/hash.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/lambda_consumer.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/led_blinker.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/led_blinker.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/local_debug.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/local_debug.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/minimal_button.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/observable.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/observable.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/observablevalue.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/pwm_output.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/pwm_output.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/resettable.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/resettable.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/rgb_led.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/rgb_led.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/serial_number.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/startable.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/stream_producer.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/system_status_led.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/system_status_led.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/task_queue_producer.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/ui_output.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/uuid.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/uuid.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/valueconsumer.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/valueproducer.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/air_density.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/air_density.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/analogvoltage.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/analogvoltage.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/angle_correction.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/angle_correction.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/change_filter.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/change_filter.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/click_type.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/click_type.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/curveinterpolator.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/curveinterpolator.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/debounce.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/dew_point.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/dew_point.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/difference.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/difference.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/enable.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/filter.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/frequency.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/frequency.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/heat_index.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/heat_index.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/hysteresis.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/integrator.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/join.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/lambda_transform.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/lambda_transform.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/linear.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/linear.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/median.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/median.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/moving_average.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/moving_average.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/press_repeater.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/press_repeater.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/repeat_report.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/repeat.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/threshold.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/threshold.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/throttle.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/time_counter.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/timestring.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/timestring.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/transform.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/transform.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/truth_text.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/truth_text.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/typecast.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/typecast.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/voltage_multiplier.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/voltage_multiplier.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/voltagedivider.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/voltagedivider.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/zip.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/types/position.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/types/position.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/ui/ui_button.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/ui/ui_button.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/ui/ui_controls.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/ui/ui_controls.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/ui/ui_output.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/ui/ui_output.h
+.pio/libdeps/esp32dev/TFT_eSPI/.gitattributes
+.pio/libdeps/esp32dev/TFT_eSPI/.gitignore
+.pio/libdeps/esp32dev/TFT_eSPI/.piopm
+.pio/libdeps/esp32dev/TFT_eSPI/CMakeLists.txt
+.pio/libdeps/esp32dev/TFT_eSPI/Kconfig
+.pio/libdeps/esp32dev/TFT_eSPI/keywords.txt
+.pio/libdeps/esp32dev/TFT_eSPI/library.json
+.pio/libdeps/esp32dev/TFT_eSPI/library.properties
+.pio/libdeps/esp32dev/TFT_eSPI/license.txt
+.pio/libdeps/esp32dev/TFT_eSPI/README.md
+.pio/libdeps/esp32dev/TFT_eSPI/README.txt
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_config.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_eSPI.cpp
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_eSPI.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setup_old.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setup_Select.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setup.h
+.pio/libdeps/esp32dev/TFT_eSPI/.github/ISSUE_TEMPLATE/issue-template.md
+.pio/libdeps/esp32dev/TFT_eSPI/Extensions/Button.cpp
+.pio/libdeps/esp32dev/TFT_eSPI/Extensions/Button.h
+.pio/libdeps/esp32dev/TFT_eSPI/Extensions/Smooth_font.cpp
+.pio/libdeps/esp32dev/TFT_eSPI/Extensions/Smooth_font.h
+.pio/libdeps/esp32dev/TFT_eSPI/Extensions/Sprite.cpp
+.pio/libdeps/esp32dev/TFT_eSPI/Extensions/Sprite.h
+.pio/libdeps/esp32dev/TFT_eSPI/Extensions/Touch.cpp
+.pio/libdeps/esp32dev/TFT_eSPI/Extensions/Touch.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/Font7srle.c
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/Font7srle.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/Font16.c
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/Font16.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/Font32rle.c
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/Font32rle.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/Font64rle.c
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/Font64rle.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/Font72rle.c
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/Font72rle.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/Font72x53rle.c
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/Font72x53rle.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/glcdfont.c
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/Custom/Orbitron_Light_24.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/Custom/Orbitron_Light_32.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/Custom/Roboto_Thin_24.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/Custom/Satisfy_24.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/Custom/Yellowtail_32.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeMono9pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeMono12pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeMono18pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeMono24pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeMonoBold9pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeMonoBold12pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeMonoBold18pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeMonoBold24pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeMonoBoldOblique9pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeMonoBoldOblique12pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeMonoBoldOblique18pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeMonoBoldOblique24pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeMonoOblique9pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeMonoOblique12pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeMonoOblique18pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeMonoOblique24pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSans9pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSans12pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSans18pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSans24pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSansBold9pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSansBold12pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSansBold18pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSansBold24pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSansBoldOblique9pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSansBoldOblique12pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSansBoldOblique18pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSansBoldOblique24pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSansOblique9pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSansOblique12pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSansOblique18pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSansOblique24pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSerif9pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSerif12pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSerif18pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSerif24pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSerifBold9pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSerifBold12pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSerifBold18pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSerifBold24pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSerifBoldItalic9pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSerifBoldItalic12pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSerifBoldItalic18pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSerifBoldItalic24pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSerifItalic9pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSerifItalic12pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSerifItalic18pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/FreeSerifItalic24pt7b.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/gfxfont.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/license.txt
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/print.txt
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/GFXFF/TomThumb.h
+.pio/libdeps/esp32dev/TFT_eSPI/Fonts/TrueType/Not_yet_supported.txt
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/pio_8bit_parallel_18bpp.pio.h
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/pio_8bit_parallel.pio.h
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/pio_16bit_parallel.pio.h
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/pio_SPI_18bit.pio.h
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/pio_SPI.pio.h
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/TFT_eSPI_ESP32_C3.c
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/TFT_eSPI_ESP32_C3.h
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/TFT_eSPI_ESP32_S3.c
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/TFT_eSPI_ESP32_S3.h
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/TFT_eSPI_ESP32.c
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/TFT_eSPI_ESP32.h
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/TFT_eSPI_ESP8266.c
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/TFT_eSPI_ESP8266.h
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/TFT_eSPI_Generic.c
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/TFT_eSPI_Generic.h
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/TFT_eSPI_RP2040.c
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/TFT_eSPI_RP2040.h
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/TFT_eSPI_STM32.c
+.pio/libdeps/esp32dev/TFT_eSPI/Processors/TFT_eSPI_STM32.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/EPD_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/GC9A01_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/GC9A01_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/GC9A01_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/HX8357B_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/HX8357B_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/HX8357B_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/HX8357C_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/HX8357C_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/HX8357C_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/HX8357D_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/HX8357D_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/HX8357D_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9163_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9163_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9163_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9225_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9225_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9225_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9341_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9341_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9341_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9481_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9481_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9481_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9486_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9486_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9486_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9488_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9488_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ILI9488_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/R61581_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/R61581_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/R61581_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/RM68120_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/RM68120_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/RM68120_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/RM68140_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/RM68140_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/RM68140_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/S6D02A1_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/S6D02A1_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/S6D02A1_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/SSD1351_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/SSD1351_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/SSD1351_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/SSD1963_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/SSD1963_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/SSD1963_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ST7735_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ST7735_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ST7735_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ST7789_2_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ST7789_2_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ST7789_2_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ST7789_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ST7789_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ST7789_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ST7796_Defines.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ST7796_Init.h
+.pio/libdeps/esp32dev/TFT_eSPI/TFT_Drivers/ST7796_Rotation.h
+.pio/libdeps/esp32dev/TFT_eSPI/Tools/Create_Smooth_Font/Create_font/Create_font.pde
+.pio/libdeps/esp32dev/TFT_eSPI/Tools/Create_Smooth_Font/Create_font/FontFiles/Final-Frontier28.h
+.pio/libdeps/esp32dev/TFT_eSPI/Tools/Create_Smooth_Font/Create_font/data/Final-Frontier.ttf
+.pio/libdeps/esp32dev/TFT_eSPI/Tools/Screenshot_client/Screenshot_client.pde
+.pio/libdeps/esp32dev/TFT_eSPI/Tools/bmp2array4bit/bmp2array4bit.py
+.pio/libdeps/esp32dev/TFT_eSPI/Tools/bmp2array4bit/README.md
+.pio/libdeps/esp32dev/TFT_eSPI/Tools/bmp2array4bit/star.bmp
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup0_Sprite.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup1_ILI9341.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup2_ST7735.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup3_ILI9163.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup4_S6D02A1.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup5_RPi_ILI9486.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup6_RPi_Wr_ILI9486.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup7_ST7735_128x128.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup8_ILI9163_128x128.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup9_ST7735_Overlap.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup10_RPi_touch_ILI9486.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup11_RPi_touch_ILI9486.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup12_M5Stack_Basic_Core.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup13_ILI9481_Parallel.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup14_ILI9341_Parallel.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup15_HX8357D.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup16_ILI9488_Parallel.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup17_ePaper.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup18_ST7789.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup19_RM68140_Parallel.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup20_ILI9488.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup21_ILI9488.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup22_TTGO_T4_v1.3.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup22_TTGO_T4.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup23_TTGO_TM.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup24_ST7789.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup25_TTGO_T_Display.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup26_TTGO_T_Wristband.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup27_RPi_ST7796_ESP32.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup28_RPi_ST7796_ESP8266.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup29_ILI9341_STM32.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup29b_ILI9341_STM32.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup30_ILI9341_Parallel_STM32.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup31_ST7796_Parallel_STM32.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup32_ILI9341_STM32F103.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup33_RPi_ILI9486_STM32.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup34_ILI9481_Parallel_STM32.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup35_ILI9341_STM32_Port_Bus.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup36_RPi_touch_ST7796.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup42_ILI9341_ESP32.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup43_ST7735.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup44_TTGO_CameraPlus.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup45_TTGO_T_Watch.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup46_GC9A01_ESP32.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup47_ST7735.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup50_SSD1963_Parallel.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup51_LilyPi_ILI9481.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup52_LilyPi_ST7796.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup60_RP2040_ILI9341.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup60_RP2040_RPI_MHS.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup61_RP2040_ILI9341_PIO_SPI.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup62_RP2040_Nano_Connect_ILI9341.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup66_Seeed_XIAO_Round.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup70_ESP32_S2_ILI9341.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup70b_ESP32_S3_ILI9341.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup70c_ESP32_C3_ILI9341.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup70d_ILI9488_S3_Parallel.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup70f_ESP32_S2_ST7735.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup70h_ESP32_S3_GC9A01.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup71_ESP32_S2_ST7789.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup72_ESP32_ST7789_172x320.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup100_RP2040_ILI9488_parallel.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup101_RP2040_ILI9481_parallel.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup102_RP2040_ILI9341_parallel.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup103_RP2040_ILI9486_parallel.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup104_RP2040_ST7796_parallel.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup105_RP2040_ST7796_16bit_parallel.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup106_RP2040_ILI9481_16bit_parallel.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup107_RP2040_ILI9341_16bit_parallel.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup108_RP2040_ST7735.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup135_ST7789.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup136_LilyGo_TTV.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup137_LilyGo_TDisplay_RP2040.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup138_Pico_Explorer_Base_RP2040_ST7789.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup200_GC9A01.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup201_WT32_SC01.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup202_SSD1351_128.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup203_ST7789.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup204_ESP32_TouchDown.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup205_ESP32_TouchDown_S3.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup206_LilyGo_T_Display_S3.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup207_LilyGo_T_HMI.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup209_LilyGo_T_Dongle_S3.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup210_LilyGo_T_Embed_S3.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup211_LilyGo_T_QT_Pro_S3.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup212_LilyGo_T_PicoPro.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup213_LilyGo_T_Beam_Shield.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup250_ESP32_S3_Box_Lite.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup251_ESP32_S3_Box.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup301_BW16_ST7735.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/Setup302_Waveshare_ESP32S3_GC9A01.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/SetupX_Template.h
+.pio/libdeps/esp32dev/TFT_eSPI/User_Setups/User_Custom_Fonts.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/Arduino_Life/Arduino_Life.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/Pong_v3/Pong_v3.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/RLE_Font_test/RLE_Font_test.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/TFT_Char_times/TFT_Char_times.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/TFT_Clock/TFT_Clock.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/TFT_Clock_Digital/TFT_Clock_Digital.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/TFT_Ellipse/TFT_Ellipse.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/TFT_Meter_5/TFT_Meter_5.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/TFT_Print_Test/TFT_Print_Test.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/TFT_Rainbow/TFT_Rainbow.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/TFT_flash_jpg/jpeg1.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/TFT_flash_jpg/jpeg2.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/TFT_flash_jpg/jpeg3.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/TFT_flash_jpg/jpeg4.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/TFT_flash_jpg/TFT_flash_jpg.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/TFT_graphicstest_PDQ3/TFT_graphicstest_PDQ3.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/TFT_graphicstest_small/TFT_graphicstest_small.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/160 x 128/UTFT_demo_fast/UTFT_demo_fast.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/All_Free_Fonts_Demo/All_Free_Fonts_Demo.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/All_Free_Fonts_Demo/Free_Fonts.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/Cellular_Automata/Cellular_Automata.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/Free_Font_Demo/Free_Font_Demo.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/Free_Font_Demo/Free_Fonts.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/Keypad_240x320/Keypad_240x320.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/RLE_Font_test/RLE_Font_test.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/Read_ID_bitbash/Read_ID_bitbash.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_ArcFill/TFT_ArcFill.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Char_times/TFT_Char_times.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Clock/TFT_Clock.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Clock_Digital/TFT_Clock_Digital.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Custom_Fonts/TFT_Custom_Fonts.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Ellipse/TFT_Ellipse.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_FillArcSpiral/TFT_FillArcSpiral.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Float_Test/TFT_Float_Test.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Mandlebrot/TFT_Mandlebrot.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Matrix/TFT_Matrix.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Meter_linear/TFT_Meter_linear.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Meters/TFT_Meters.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Pie_Chart/TFT_Pie_Chart.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Pong/TFT_Pong.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Print_Test/TFT_Print_Test.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Rainbow_one_lib/TFT_Rainbow_one_lib.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Read_Reg/TFT_Read_Reg.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Spiro/TFT_Spiro.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Starfield/TFT_Starfield.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_String_Align/TFT_String_Align.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_Terminal/TFT_Terminal.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_graphicstest_PDQ/TFT_graphicstest_PDQ.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/TFT_graphicstest_one_lib/TFT_graphicstest_one_lib.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/320 x 240/UTFT_demo/UTFT_demo.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/Cellular_Automata/Cellular_Automata.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/Demo_3D_cube/Demo_3D_cube.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/Free_Font_Demo/Free_Font_Demo.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/Free_Font_Demo/Free_Fonts.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/Graph_2/Graph_2.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/Keypad_480x320/Keypad_480x320.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/TFT_Char_times/TFT_Char_times.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/TFT_Ellipse/TFT_Ellipse.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/TFT_Meter_4/TFT_Meter_4.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/TFT_Meters/TFT_Meters.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/TFT_Padding_demo/TFT_Padding_demo.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/TFT_Print_Test/TFT_Print_Test.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/TFT_Rainbow480/TFT_Rainbow480.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/TFT_String_Align/TFT_String_Align.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/TFT_flash_jpg/jpeg1.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/TFT_flash_jpg/jpeg2.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/TFT_flash_jpg/jpeg3.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/TFT_flash_jpg/jpeg4.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/TFT_flash_jpg/TFT_flash_jpg.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/TFT_graphicstest_one_lib/TFT_graphicstest_one_lib.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/TFT_ring_meter/Alert.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/TFT_ring_meter/TFT_ring_meter.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/Touch_Controller_Demo/Touch_Controller_Demo.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/480 x 320/UTFT_Demo_480x320/UTFT_Demo_480x320.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/DMA test/Bouncy_Circles/Bouncy_Circles.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/DMA test/Flash_Jpg_DMA/Flash_Jpg_DMA.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/DMA test/Flash_Jpg_DMA/panda.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/DMA test/SpriteRotatingCube/SpriteRotatingCube.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/DMA test/boing_ball/boing_ball.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/DMA test/boing_ball/graphic.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/GUI Widgets/Buttons/Button_demo/Button_demo.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/GUI Widgets/Buttons/Button_demo/Free_Fonts.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/GUI Widgets/Graphs/Graph_demo_1/Graph_demo_1.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/GUI Widgets/Graphs/Graph_demo_2/Graph_demo_2.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/GUI Widgets/Meters/Analogue_meters/Analogue_meters.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/GUI Widgets/Sliders/Slider_demo/Free_Fonts.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/GUI Widgets/Sliders/Slider_demo/Slider_demo.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_1/Animated_Eyes_1.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_1/config.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_1/eye_functions.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_1/user_bat.cpp
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_1/user_xmas.cpp
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_1/user.cpp
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_1/data/catEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_1/data/defaultEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_1/data/doeEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_1/data/dragonEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_1/data/goatEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_1/data/logo.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_1/data/naugaEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_1/data/newtEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_1/data/noScleraEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_1/data/owlEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_1/data/terminatorEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/Animated_Eyes_2.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/config.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/eye_functions.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/user_bat.cpp
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/user_xmas.cpp
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/user.cpp
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/wiring.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/data/catEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/data/defaultEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/data/doeEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/data/dragonEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/data/goatEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/data/logo.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/data/naugaEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/data/newtEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/data/noScleraEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/data/owlEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Animated_Eyes_2/data/terminatorEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/ESP32_SDcard_jpeg/ESP32_SDcard_jpeg.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/ESP8266_uncannyEyes/defaultEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/ESP8266_uncannyEyes/dragonEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/ESP8266_uncannyEyes/ESP8266_uncannyEyes.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/ESP8266_uncannyEyes/goatEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/ESP8266_uncannyEyes/noScleraEye.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/ESP8266_uncannyEyes/screenshotToConsole.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Gradient_Fill/Gradient_Fill.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Julia_Set/Julia_Set.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Local_Custom_Fonts/Local_Custom_Fonts.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Local_Custom_Fonts/MyFont.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/On_Off_Button/On_Off_Button.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/TFT_Button_Label_Datum/TFT_Button_Label_Datum.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/TFT_Flash_Bitmap/Alert.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/TFT_Flash_Bitmap/Close.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/TFT_Flash_Bitmap/Info.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/TFT_Flash_Bitmap/TFT_Flash_Bitmap.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/TFT_SPIFFS_BMP/BMP_functions.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/TFT_SPIFFS_BMP/TFT_SPIFFS_BMP.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/TFT_SPIFFS_BMP/data/parrot.bmp
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/TFT_Screen_Capture/processing_sketch.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/TFT_Screen_Capture/screenServer.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/TFT_Screen_Capture/TFT_Screen_Capture.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Touch_calibrate/Touch_calibrate.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Viewport_Demo/Viewport_commands.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Viewport_Demo/Viewport_Demo.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/Viewport_graphicstest/Viewport_graphicstest.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/alphaBlend_Test/alphaBlend_Test.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/drawXBitmap/drawXBitmap.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Generic/drawXBitmap/xbm.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/PNG Images/Flash_PNG/Flash_PNG.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/PNG Images/Flash_PNG/panda.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/PNG Images/Flash_transparent_PNG/Flash_transparent_PNG.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/PNG Images/Flash_transparent_PNG/png_support.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/PNG Images/Flash_transparent_PNG/SpongeBob.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/PNG Images/LittleFS_PNG/LittleFS_PNG.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/PNG Images/LittleFS_PNG/PNG_FS_Support.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/PNG Images/LittleFS_PNG_DMA/LittleFS_PNG_DMA.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/PNG Images/LittleFS_PNG_DMA/PNG_FS_Support.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Font_Demo_1_Array/Font_Demo_1_Array.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Font_Demo_1_Array/Notes.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Font_Demo_1_Array/NotoSansBold15.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Font_Demo_1_Array/NotoSansBold36.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Font_Demo_2_Array/Font_Demo_2_Array.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Font_Demo_2_Array/Notes.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Font_Demo_2_Array/NotoSansBold15.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Font_Demo_2_Array/NotoSansBold36.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Font_Demo_3_Array/Font_Demo_3_Array.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Font_Demo_3_Array/Notes.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Font_Demo_3_Array/NotoSansBold15.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Font_Demo_3_Array/NotoSansBold36.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Font_Demo_3_Array/NotoSansMonoSCB20.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Font_Demo_4_Array/Font_Demo_4_Array.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Font_Demo_4_Array/Notes.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Font_Demo_4_Array/NotoSansBold15.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Font_Demo_4_Array/NotoSansBold36.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Print_Smooth_Font/Final_Frontier_28.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Print_Smooth_Font/Print_Smooth_Font.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Smooth_font_gradient/NotoSansBold15.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Smooth_font_gradient/NotoSansBold36.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Smooth_font_gradient/Smooth_font_gradient.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Smooth_font_reading_TFT/NotoSansBold15.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Smooth_font_reading_TFT/NotoSansBold36.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Smooth_font_reading_TFT/Smooth_font_reading_TFT.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Unicode_test/Final_Frontier_28.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Unicode_test/Latin_Hiragana_24.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Unicode_test/Unicode_Test_72.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Unicode_test/Unicode_test.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Unicode_test/data/Final-Frontier-28.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Unicode_test/data/Latin-Hiragana-24.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/FLASH_Array/Unicode_test/data/Unicode-Test-72.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Font_Demo_1/Font_Demo_1.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Font_Demo_1/Notes.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Font_Demo_1/data/NotoSansBold15.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Font_Demo_1/data/NotoSansBold36.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Font_Demo_2/Font_Demo_2.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Font_Demo_2/Notes.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Font_Demo_2/data/NotoSansBold15.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Font_Demo_2/data/NotoSansBold36.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Font_Demo_3/Font_Demo_3.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Font_Demo_3/Notes.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Font_Demo_3/data/NotoSansBold15.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Font_Demo_3/data/NotoSansBold36.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Font_Demo_3/data/NotoSansMonoSCB20.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Font_Demo_4/Font_Demo_4.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Font_Demo_4/Notes.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Font_Demo_4/data/NotoSansBold15.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Font_Demo_4/data/NotoSansBold36.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Print_Smooth_Font/Print_Smooth_Font.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Print_Smooth_Font/data/Final-Frontier-28.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Smooth_font_gradient/Smooth_font_gradient.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Smooth_font_gradient/data/NotoSansBold15.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Smooth_font_gradient/data/NotoSansBold36.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Smooth_font_reading_TFT/Smooth_font_reading_TFT.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Smooth_font_reading_TFT/data/NotoSansBold15.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Smooth_font_reading_TFT/data/NotoSansBold36.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Unicode_test/LittleFS_functions.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Unicode_test/Unicode_test.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Unicode_test/data/Final-Frontier-28.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Unicode_test/data/Latin-Hiragana-24.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/LittleFS/Unicode_test/data/Unicode-Test-72.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SD_Card/ESP32_Smooth_Font_SD/ESP32_Smooth_Font_SD.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SD_Card/ESP32_Smooth_Font_SD/data/Final-Frontier-28.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Font_Demo_1/Font_Demo_1.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Font_Demo_1/Notes.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Font_Demo_1/data/NotoSansBold15.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Font_Demo_1/data/NotoSansBold36.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Font_Demo_2/Font_Demo_2.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Font_Demo_2/Notes.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Font_Demo_2/data/NotoSansBold15.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Font_Demo_2/data/NotoSansBold36.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Font_Demo_3/Font_Demo_3.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Font_Demo_3/Notes.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Font_Demo_3/data/NotoSansBold15.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Font_Demo_3/data/NotoSansBold36.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Font_Demo_3/data/NotoSansMonoSCB20.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Font_Demo_4/Font_Demo_4.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Font_Demo_4/Notes.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Font_Demo_4/data/NotoSansBold15.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Font_Demo_4/data/NotoSansBold36.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Print_Smooth_Font/Print_Smooth_Font.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Print_Smooth_Font/data/Final-Frontier-28.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Smooth_font_gradient/Smooth_font_gradient.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Smooth_font_gradient/data/NotoSansBold15.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Smooth_font_gradient/data/NotoSansBold36.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Smooth_font_reading_TFT/Smooth_font_reading_TFT.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Smooth_font_reading_TFT/data/NotoSansBold15.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Smooth_font_reading_TFT/data/NotoSansBold36.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Unicode_test/SPIFFS_functions.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Unicode_test/Unicode_test.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Unicode_test/data/Final-Frontier-28.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Unicode_test/data/Latin-Hiragana-24.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Fonts/SPIFFS/Unicode_test/data/Unicode-Test-72.vlw
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Graphics/Anti-aliased_Clock/Anti-aliased_Clock.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Graphics/Anti-aliased_Clock/NotoSansBold15.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Graphics/Anti-aliased_Clock/NTP_Time.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Graphics/Arc_meter_demo/Arc_meter_demo.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Graphics/Arc_meter_demo/NotoSans_Bold.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Graphics/Colour_Wheel/Colour_Wheel.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Graphics/Draw_Arc/Draw_Arc.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Graphics/Draw_Smooth_Circles/Draw_Smooth_Circles.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Graphics/Smooth_Arc/Smooth_Arc.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Graphics/Smooth_Graphics_Demo/Smooth_Graphics_Demo.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Smooth Graphics/Smooth_Rounded_Rectangles/Smooth_Rounded_Rectangles.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Animated_dial/Animated_dial.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Animated_dial/dial.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Animated_dial/NotoSansBold36.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/One_bit_Sprite_Demo/One_bit_Sprite_Demo.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/One_bit_Yin_Yang/One_bit_Yin_Yang.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Orrery/astronomy.c
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Orrery/astronomy.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Orrery/Orrery.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Rotated_Sprite_1/Rotated_Sprite_1.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Rotated_Sprite_2/Rotated_Sprite_2.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Rotated_Sprite_3/Rotated_Sprite_3.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Sprite_RLE_Font_test/Sprite_RLE_Font_test.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Sprite_TFT_Rainbow/Sprite_TFT_Rainbow.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Sprite_draw/Sprite_draw.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Sprite_draw_4bit/Sprite_draw_4bit.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Sprite_image_4bit/sample_images.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Sprite_image_4bit/Sprite_image_4bit.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Sprite_image_4bit/starImage.cpp
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Sprite_scroll/Sprite_scroll.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Sprite_scroll_16bit/Sprite_scroll_16bit.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Sprite_scroll_1bit/Sprite_scroll_1bit.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Sprite_scroll_4bit/Sprite_scroll_4bit.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Sprite_scroll_8bit/Sprite_scroll_8bit.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Sprite_scroll_wrap_1bit/Sprite_scroll_wrap_1bit.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Transparent_Sprite_Demo/Transparent_Sprite_Demo.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Sprite/Transparent_Sprite_Demo_4bit/Transparent_Sprite_Demo_4bit.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Test and diagnostics/Colour_Test/Colour_Test.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Test and diagnostics/Read_User_Setup/Read_User_Setup.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Test and diagnostics/TFT_ReadWrite_Test/TFT_ReadWrite_Test.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/Test and diagnostics/Test_Touch_Controller/Test_Touch_Controller.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/ePaper/Floyd_Steinberg/EPD_Support.h
+.pio/libdeps/esp32dev/TFT_eSPI/examples/ePaper/Floyd_Steinberg/Floyd_Steinberg_BMP.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/ePaper/Floyd_Steinberg/Floyd_Steinberg.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/ePaper/Floyd_Steinberg/SPIFFS.ino
+.pio/libdeps/esp32dev/TFT_eSPI/examples/ePaper/Floyd_Steinberg/data/TestCard.bmp
+.pio/libdeps/esp32dev/TFT_eSPI/examples/ePaper/Floyd_Steinberg/data/Tiger.bmp
+.pio/libdeps/esp32dev/elapsedMillis/.piopm
+.pio/libdeps/esp32dev/elapsedMillis/elapsedMillis.h
+.pio/libdeps/esp32dev/elapsedMillis/keywords.txt
+.pio/libdeps/esp32dev/elapsedMillis/library.json
+.pio/libdeps/esp32dev/elapsedMillis/library.properties
+.pio/libdeps/esp32dev/elapsedMillis/LICENSE
+.pio/libdeps/esp32dev/elapsedMillis/README.md
+.pio/libdeps/esp32dev/elapsedMillis/.github/workflows/build-examples.yml
+.pio/libdeps/esp32dev/elapsedMillis/examples/GettingStarted/GettingStarted.ino
+.pio/libdeps/esp32dev/elapsedMillis/examples/blinkingLeds/blinkingLeds.ino
+.pio/libdeps/esp32dev/elapsedMillis/examples/timeouts/timeouts.ino
+.pio/libdeps/esp32dev/elapsedMillis/examples/timingComparison/timingComparison.ino
+.pio/libdeps/esp32dev/lvgl/.codecov.yml
+.pio/libdeps/esp32dev/lvgl/.editorconfig
+.pio/libdeps/esp32dev/lvgl/.gitignore
+.pio/libdeps/esp32dev/lvgl/.piopm
+.pio/libdeps/esp32dev/lvgl/.pre-commit-config.yaml
+.pio/libdeps/esp32dev/lvgl/CMakeLists.txt
+.pio/libdeps/esp32dev/lvgl/component.mk
+.pio/libdeps/esp32dev/lvgl/idf_component.yml
+.pio/libdeps/esp32dev/lvgl/Kconfig
+.pio/libdeps/esp32dev/lvgl/library.json
+.pio/libdeps/esp32dev/lvgl/library.properties
+.pio/libdeps/esp32dev/lvgl/LICENCE.txt
+.pio/libdeps/esp32dev/lvgl/lv_conf_template.h
+.pio/libdeps/esp32dev/lvgl/lvgl.h
+.pio/libdeps/esp32dev/lvgl/lvgl.mk
+.pio/libdeps/esp32dev/lvgl/lvgl.pc.in
+.pio/libdeps/esp32dev/lvgl/README_pt_BR.md
+.pio/libdeps/esp32dev/lvgl/README_zh.md
+.pio/libdeps/esp32dev/lvgl/README.md
+.pio/libdeps/esp32dev/lvgl/SConscript
+.pio/libdeps/esp32dev/lvgl/.github/auto-comment.yml
+.pio/libdeps/esp32dev/lvgl/.github/FUNDING.yml
+.pio/libdeps/esp32dev/lvgl/.github/pull_request_template.md
+.pio/libdeps/esp32dev/lvgl/.github/ISSUE_TEMPLATE/bug-report.md
+.pio/libdeps/esp32dev/lvgl/.github/ISSUE_TEMPLATE/config.yml
+.pio/libdeps/esp32dev/lvgl/.github/ISSUE_TEMPLATE/dev-discussion.md
+.pio/libdeps/esp32dev/lvgl/.github/workflows/arduino.yml
+.pio/libdeps/esp32dev/lvgl/.github/workflows/build_micropython.yml
+.pio/libdeps/esp32dev/lvgl/.github/workflows/ccpp.yml
+.pio/libdeps/esp32dev/lvgl/.github/workflows/check_conf.yml
+.pio/libdeps/esp32dev/lvgl/.github/workflows/check_style.yml
+.pio/libdeps/esp32dev/lvgl/.github/workflows/close_old_issues.yml
+.pio/libdeps/esp32dev/lvgl/.github/workflows/compile_docs.yml
+.pio/libdeps/esp32dev/lvgl/.github/workflows/esp_upload_component.yml
+.pio/libdeps/esp32dev/lvgl/.github/workflows/main.yml
+.pio/libdeps/esp32dev/lvgl/.github/workflows/makefile.yml
+.pio/libdeps/esp32dev/lvgl/.github/workflows/release.yml
+.pio/libdeps/esp32dev/lvgl/demos/lv_demos.h
+.pio/libdeps/esp32dev/lvgl/demos/lv_demos.mk
+.pio/libdeps/esp32dev/lvgl/demos/README.md
+.pio/libdeps/esp32dev/lvgl/demos/benchmark/lv_demo_benchmark.c
+.pio/libdeps/esp32dev/lvgl/demos/benchmark/lv_demo_benchmark.h
+.pio/libdeps/esp32dev/lvgl/demos/benchmark/README.md
+.pio/libdeps/esp32dev/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_alpha16.c
+.pio/libdeps/esp32dev/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_argb.c
+.pio/libdeps/esp32dev/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_chroma_keyed.c
+.pio/libdeps/esp32dev/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_indexed16.c
+.pio/libdeps/esp32dev/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_rgb.c
+.pio/libdeps/esp32dev/lvgl/demos/benchmark/assets/img_benchmark_cogwheel_rgb565a8.c
+.pio/libdeps/esp32dev/lvgl/demos/benchmark/assets/lv_font_bechmark_montserrat_12_compr_az.c.c
+.pio/libdeps/esp32dev/lvgl/demos/benchmark/assets/lv_font_bechmark_montserrat_16_compr_az.c.c
+.pio/libdeps/esp32dev/lvgl/demos/benchmark/assets/lv_font_bechmark_montserrat_28_compr_az.c.c
+.pio/libdeps/esp32dev/lvgl/demos/keypad_encoder/lv_demo_keypad_encoder.c
+.pio/libdeps/esp32dev/lvgl/demos/keypad_encoder/lv_demo_keypad_encoder.h
+.pio/libdeps/esp32dev/lvgl/demos/keypad_encoder/README.md
+.pio/libdeps/esp32dev/lvgl/demos/music/lv_demo_music_list.c
+.pio/libdeps/esp32dev/lvgl/demos/music/lv_demo_music_list.h
+.pio/libdeps/esp32dev/lvgl/demos/music/lv_demo_music_main.c
+.pio/libdeps/esp32dev/lvgl/demos/music/lv_demo_music_main.h
+.pio/libdeps/esp32dev/lvgl/demos/music/lv_demo_music.c
+.pio/libdeps/esp32dev/lvgl/demos/music/lv_demo_music.h
+.pio/libdeps/esp32dev/lvgl/demos/music/README.md
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_btn_corner_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_btn_list_pause_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_btn_list_pause.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_btn_list_play_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_btn_list_play.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_btn_loop_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_btn_loop.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_btn_next_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_btn_next.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_btn_pause_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_btn_pause.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_btn_play_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_btn_play.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_btn_prev_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_btn_prev.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_btn_rnd_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_btn_rnd.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_corner_left_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_corner_left.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_corner_right_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_corner_right.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_cover_1_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_cover_1.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_cover_2_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_cover_2.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_cover_3_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_cover_3.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_icon_1_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_icon_1.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_icon_2_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_icon_2.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_icon_3_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_icon_3.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_icon_4_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_icon_4.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_list_border_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_list_border.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_logo.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_slider_knob_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_slider_knob.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_wave_bottom_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_wave_bottom.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_wave_top_large.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/img_lv_demo_music_wave_top.c
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/spectrum_1.h
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/spectrum_2.h
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/spectrum_3.h
+.pio/libdeps/esp32dev/lvgl/demos/music/assets/spectrum.py
+.pio/libdeps/esp32dev/lvgl/demos/stress/lv_demo_stress.c
+.pio/libdeps/esp32dev/lvgl/demos/stress/lv_demo_stress.h
+.pio/libdeps/esp32dev/lvgl/demos/stress/README.md
+.pio/libdeps/esp32dev/lvgl/demos/widgets/lv_demo_widgets.c
+.pio/libdeps/esp32dev/lvgl/demos/widgets/lv_demo_widgets.h
+.pio/libdeps/esp32dev/lvgl/demos/widgets/lv_demo_widgets.py
+.pio/libdeps/esp32dev/lvgl/demos/widgets/assets/img_clothes.c
+.pio/libdeps/esp32dev/lvgl/demos/widgets/assets/img_demo_widgets_avatar.c
+.pio/libdeps/esp32dev/lvgl/demos/widgets/assets/img_lvgl_logo.c
+.pio/libdeps/esp32dev/lvgl/env_support/cmake/custom.cmake
+.pio/libdeps/esp32dev/lvgl/env_support/cmake/esp.cmake
+.pio/libdeps/esp32dev/lvgl/env_support/cmake/micropython.cmake
+.pio/libdeps/esp32dev/lvgl/env_support/cmake/zephyr.cmake
+.pio/libdeps/esp32dev/lvgl/env_support/cmsis-pack/gen_pack.sh
+.pio/libdeps/esp32dev/lvgl/env_support/cmsis-pack/lv_cmsis_pack.txt
+.pio/libdeps/esp32dev/lvgl/env_support/cmsis-pack/lv_conf_cmsis.h
+.pio/libdeps/esp32dev/lvgl/env_support/cmsis-pack/LVGL.lvgl.8.4.0.pack
+.pio/libdeps/esp32dev/lvgl/env_support/cmsis-pack/LVGL.lvgl.pdsc
+.pio/libdeps/esp32dev/lvgl/env_support/cmsis-pack/LVGL.pidx
+.pio/libdeps/esp32dev/lvgl/env_support/cmsis-pack/README.md
+.pio/libdeps/esp32dev/lvgl/env_support/rt-thread/lv_rt_thread_conf.h
+.pio/libdeps/esp32dev/lvgl/env_support/rt-thread/lv_rt_thread_port.c
+.pio/libdeps/esp32dev/lvgl/env_support/rt-thread/SConscript
+.pio/libdeps/esp32dev/lvgl/env_support/rt-thread/squareline/lv_ui_entry.c
+.pio/libdeps/esp32dev/lvgl/env_support/rt-thread/squareline/README.md
+.pio/libdeps/esp32dev/lvgl/env_support/rt-thread/squareline/SConscript
+.pio/libdeps/esp32dev/lvgl/env_support/rt-thread/squareline/ui/lvgl/lvgl.h
+.pio/libdeps/esp32dev/lvgl/env_support/zephyr/module.yml
+.pio/libdeps/esp32dev/lvgl/examples/header.py
+.pio/libdeps/esp32dev/lvgl/examples/lv_examples.h
+.pio/libdeps/esp32dev/lvgl/examples/lv_examples.mk
+.pio/libdeps/esp32dev/lvgl/examples/test_ex.sh
+.pio/libdeps/esp32dev/lvgl/examples/anim/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/anim/lv_example_anim_1.c
+.pio/libdeps/esp32dev/lvgl/examples/anim/lv_example_anim_1.py
+.pio/libdeps/esp32dev/lvgl/examples/anim/lv_example_anim_2.c
+.pio/libdeps/esp32dev/lvgl/examples/anim/lv_example_anim_2.py
+.pio/libdeps/esp32dev/lvgl/examples/anim/lv_example_anim_3.c
+.pio/libdeps/esp32dev/lvgl/examples/anim/lv_example_anim_3.py
+.pio/libdeps/esp32dev/lvgl/examples/anim/lv_example_anim_timeline_1.c
+.pio/libdeps/esp32dev/lvgl/examples/anim/lv_example_anim_timeline_1.py
+.pio/libdeps/esp32dev/lvgl/examples/anim/lv_example_anim.h
+.pio/libdeps/esp32dev/lvgl/examples/arduino/LVGL_Arduino/LVGL_Arduino.ino
+.pio/libdeps/esp32dev/lvgl/examples/assets/animimg001.c
+.pio/libdeps/esp32dev/lvgl/examples/assets/animimg002.c
+.pio/libdeps/esp32dev/lvgl/examples/assets/animimg003.c
+.pio/libdeps/esp32dev/lvgl/examples/assets/img_caret_down.c
+.pio/libdeps/esp32dev/lvgl/examples/assets/img_cogwheel_alpha16.c
+.pio/libdeps/esp32dev/lvgl/examples/assets/img_cogwheel_argb.c
+.pio/libdeps/esp32dev/lvgl/examples/assets/img_cogwheel_chroma_keyed.c
+.pio/libdeps/esp32dev/lvgl/examples/assets/img_cogwheel_indexed16.c
+.pio/libdeps/esp32dev/lvgl/examples/assets/img_cogwheel_rgb.c
+.pio/libdeps/esp32dev/lvgl/examples/assets/img_hand.c
+.pio/libdeps/esp32dev/lvgl/examples/assets/img_skew_strip_80x20_argb8888.fnt
+.pio/libdeps/esp32dev/lvgl/examples/assets/img_skew_strip.c
+.pio/libdeps/esp32dev/lvgl/examples/assets/img_star.c
+.pio/libdeps/esp32dev/lvgl/examples/assets/imgbtn_left.c
+.pio/libdeps/esp32dev/lvgl/examples/assets/imgbtn_mid.c
+.pio/libdeps/esp32dev/lvgl/examples/assets/imgbtn_right.c
+.pio/libdeps/esp32dev/lvgl/examples/assets/emoji/img_emoji_F617.c
+.pio/libdeps/esp32dev/lvgl/examples/assets/font/lv_font_simsun_16_cjk.fnt
+.pio/libdeps/esp32dev/lvgl/examples/assets/font/montserrat-16.fnt
+.pio/libdeps/esp32dev/lvgl/examples/assets/font/montserrat-22.fnt
+.pio/libdeps/esp32dev/lvgl/examples/event/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/event/lv_example_event_1.c
+.pio/libdeps/esp32dev/lvgl/examples/event/lv_example_event_1.py
+.pio/libdeps/esp32dev/lvgl/examples/event/lv_example_event_2.c
+.pio/libdeps/esp32dev/lvgl/examples/event/lv_example_event_2.py
+.pio/libdeps/esp32dev/lvgl/examples/event/lv_example_event_3.c
+.pio/libdeps/esp32dev/lvgl/examples/event/lv_example_event_3.py
+.pio/libdeps/esp32dev/lvgl/examples/event/lv_example_event_4.c
+.pio/libdeps/esp32dev/lvgl/examples/event/lv_example_event.h
+.pio/libdeps/esp32dev/lvgl/examples/get_started/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/get_started/lv_example_get_started_1.c
+.pio/libdeps/esp32dev/lvgl/examples/get_started/lv_example_get_started_1.py
+.pio/libdeps/esp32dev/lvgl/examples/get_started/lv_example_get_started_2.c
+.pio/libdeps/esp32dev/lvgl/examples/get_started/lv_example_get_started_2.py
+.pio/libdeps/esp32dev/lvgl/examples/get_started/lv_example_get_started_3.c
+.pio/libdeps/esp32dev/lvgl/examples/get_started/lv_example_get_started_3.py
+.pio/libdeps/esp32dev/lvgl/examples/get_started/lv_example_get_started.h
+.pio/libdeps/esp32dev/lvgl/examples/layouts/lv_example_layout.h
+.pio/libdeps/esp32dev/lvgl/examples/layouts/flex/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/layouts/flex/lv_example_flex_1.c
+.pio/libdeps/esp32dev/lvgl/examples/layouts/flex/lv_example_flex_1.py
+.pio/libdeps/esp32dev/lvgl/examples/layouts/flex/lv_example_flex_2.c
+.pio/libdeps/esp32dev/lvgl/examples/layouts/flex/lv_example_flex_2.py
+.pio/libdeps/esp32dev/lvgl/examples/layouts/flex/lv_example_flex_3.c
+.pio/libdeps/esp32dev/lvgl/examples/layouts/flex/lv_example_flex_3.py
+.pio/libdeps/esp32dev/lvgl/examples/layouts/flex/lv_example_flex_4.c
+.pio/libdeps/esp32dev/lvgl/examples/layouts/flex/lv_example_flex_4.py
+.pio/libdeps/esp32dev/lvgl/examples/layouts/flex/lv_example_flex_5.c
+.pio/libdeps/esp32dev/lvgl/examples/layouts/flex/lv_example_flex_5.py
+.pio/libdeps/esp32dev/lvgl/examples/layouts/flex/lv_example_flex_6.c
+.pio/libdeps/esp32dev/lvgl/examples/layouts/flex/lv_example_flex_6.py
+.pio/libdeps/esp32dev/lvgl/examples/layouts/flex/lv_example_flex.h
+.pio/libdeps/esp32dev/lvgl/examples/layouts/grid/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/layouts/grid/lv_example_grid_1.c
+.pio/libdeps/esp32dev/lvgl/examples/layouts/grid/lv_example_grid_1.py
+.pio/libdeps/esp32dev/lvgl/examples/layouts/grid/lv_example_grid_2.c
+.pio/libdeps/esp32dev/lvgl/examples/layouts/grid/lv_example_grid_2.py
+.pio/libdeps/esp32dev/lvgl/examples/layouts/grid/lv_example_grid_3.c
+.pio/libdeps/esp32dev/lvgl/examples/layouts/grid/lv_example_grid_3.py
+.pio/libdeps/esp32dev/lvgl/examples/layouts/grid/lv_example_grid_4.c
+.pio/libdeps/esp32dev/lvgl/examples/layouts/grid/lv_example_grid_4.py
+.pio/libdeps/esp32dev/lvgl/examples/layouts/grid/lv_example_grid_5.c
+.pio/libdeps/esp32dev/lvgl/examples/layouts/grid/lv_example_grid_5.py
+.pio/libdeps/esp32dev/lvgl/examples/layouts/grid/lv_example_grid_6.c
+.pio/libdeps/esp32dev/lvgl/examples/layouts/grid/lv_example_grid_6.py
+.pio/libdeps/esp32dev/lvgl/examples/layouts/grid/lv_example_grid.h
+.pio/libdeps/esp32dev/lvgl/examples/libs/lv_example_libs.h
+.pio/libdeps/esp32dev/lvgl/examples/libs/bmp/example_16bit.bmp
+.pio/libdeps/esp32dev/lvgl/examples/libs/bmp/example_24bit.bmp
+.pio/libdeps/esp32dev/lvgl/examples/libs/bmp/example_32bit.bmp
+.pio/libdeps/esp32dev/lvgl/examples/libs/bmp/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/libs/bmp/lv_example_bmp_1.c
+.pio/libdeps/esp32dev/lvgl/examples/libs/bmp/lv_example_bmp_1.py
+.pio/libdeps/esp32dev/lvgl/examples/libs/bmp/lv_example_bmp.h
+.pio/libdeps/esp32dev/lvgl/examples/libs/ffmpeg/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/libs/ffmpeg/lv_example_ffmpeg_1.c
+.pio/libdeps/esp32dev/lvgl/examples/libs/ffmpeg/lv_example_ffmpeg_2.c
+.pio/libdeps/esp32dev/lvgl/examples/libs/ffmpeg/lv_example_ffmpeg.h
+.pio/libdeps/esp32dev/lvgl/examples/libs/freetype/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/libs/freetype/Lato-Regular.ttf
+.pio/libdeps/esp32dev/lvgl/examples/libs/freetype/lv_example_freetype_1.c
+.pio/libdeps/esp32dev/lvgl/examples/libs/freetype/lv_example_freetype_1.py
+.pio/libdeps/esp32dev/lvgl/examples/libs/freetype/lv_example_freetype.h
+.pio/libdeps/esp32dev/lvgl/examples/libs/gif/img_bulb_gif.c
+.pio/libdeps/esp32dev/lvgl/examples/libs/gif/img_bulb_gif.py
+.pio/libdeps/esp32dev/lvgl/examples/libs/gif/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/libs/gif/lv_example_gif_1.c
+.pio/libdeps/esp32dev/lvgl/examples/libs/gif/lv_example_gif_1.py
+.pio/libdeps/esp32dev/lvgl/examples/libs/gif/lv_example_gif.h
+.pio/libdeps/esp32dev/lvgl/examples/libs/png/img_wink_png.c
+.pio/libdeps/esp32dev/lvgl/examples/libs/png/img_wink_png.py
+.pio/libdeps/esp32dev/lvgl/examples/libs/png/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/libs/png/lv_example_png_1.c
+.pio/libdeps/esp32dev/lvgl/examples/libs/png/lv_example_png_1.py
+.pio/libdeps/esp32dev/lvgl/examples/libs/png/lv_example_png.h
+.pio/libdeps/esp32dev/lvgl/examples/libs/qrcode/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/libs/qrcode/lv_example_qrcode_1.c
+.pio/libdeps/esp32dev/lvgl/examples/libs/qrcode/lv_example_qrcode_1.py
+.pio/libdeps/esp32dev/lvgl/examples/libs/qrcode/lv_example_qrcode.h
+.pio/libdeps/esp32dev/lvgl/examples/libs/rlottie/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/libs/rlottie/lv_example_rlottie_1.c
+.pio/libdeps/esp32dev/lvgl/examples/libs/rlottie/lv_example_rlottie_1.py
+.pio/libdeps/esp32dev/lvgl/examples/libs/rlottie/lv_example_rlottie_2.c
+.pio/libdeps/esp32dev/lvgl/examples/libs/rlottie/lv_example_rlottie_2.py
+.pio/libdeps/esp32dev/lvgl/examples/libs/rlottie/lv_example_rlottie_approve.c
+.pio/libdeps/esp32dev/lvgl/examples/libs/rlottie/lv_example_rlottie_approve.json
+.pio/libdeps/esp32dev/lvgl/examples/libs/rlottie/lv_example_rlottie_approve.py
+.pio/libdeps/esp32dev/lvgl/examples/libs/rlottie/lv_example_rlottie.h
+.pio/libdeps/esp32dev/lvgl/examples/libs/sjpg/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/libs/sjpg/lv_example_sjpg_1.c
+.pio/libdeps/esp32dev/lvgl/examples/libs/sjpg/lv_example_sjpg_1.py
+.pio/libdeps/esp32dev/lvgl/examples/libs/sjpg/lv_example_sjpg.h
+.pio/libdeps/esp32dev/lvgl/examples/libs/sjpg/small_image.sjpg
+.pio/libdeps/esp32dev/lvgl/examples/others/lv_example_others.h
+.pio/libdeps/esp32dev/lvgl/examples/others/fragment/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/others/fragment/lv_example_fragment_1.c
+.pio/libdeps/esp32dev/lvgl/examples/others/fragment/lv_example_fragment_2.c
+.pio/libdeps/esp32dev/lvgl/examples/others/fragment/lv_example_fragment.h
+.pio/libdeps/esp32dev/lvgl/examples/others/gridnav/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/others/gridnav/lv_example_gridnav_1.c
+.pio/libdeps/esp32dev/lvgl/examples/others/gridnav/lv_example_gridnav_2.c
+.pio/libdeps/esp32dev/lvgl/examples/others/gridnav/lv_example_gridnav_3.c
+.pio/libdeps/esp32dev/lvgl/examples/others/gridnav/lv_example_gridnav_4.c
+.pio/libdeps/esp32dev/lvgl/examples/others/gridnav/lv_example_gridnav.h
+.pio/libdeps/esp32dev/lvgl/examples/others/ime/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/others/ime/lv_example_ime_pinyin_1.c
+.pio/libdeps/esp32dev/lvgl/examples/others/ime/lv_example_ime_pinyin_2.c
+.pio/libdeps/esp32dev/lvgl/examples/others/ime/lv_example_ime_pinyin.h
+.pio/libdeps/esp32dev/lvgl/examples/others/imgfont/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/others/imgfont/lv_example_imgfont_1.c
+.pio/libdeps/esp32dev/lvgl/examples/others/imgfont/lv_example_imgfont.h
+.pio/libdeps/esp32dev/lvgl/examples/others/monkey/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/others/monkey/lv_example_monkey_1.c
+.pio/libdeps/esp32dev/lvgl/examples/others/monkey/lv_example_monkey_2.c
+.pio/libdeps/esp32dev/lvgl/examples/others/monkey/lv_example_monkey_3.c
+.pio/libdeps/esp32dev/lvgl/examples/others/monkey/lv_example_monkey.h
+.pio/libdeps/esp32dev/lvgl/examples/others/msg/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/others/msg/lv_example_msg_1.c
+.pio/libdeps/esp32dev/lvgl/examples/others/msg/lv_example_msg_2.c
+.pio/libdeps/esp32dev/lvgl/examples/others/msg/lv_example_msg_3.c
+.pio/libdeps/esp32dev/lvgl/examples/others/msg/lv_example_msg.h
+.pio/libdeps/esp32dev/lvgl/examples/others/snapshot/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/others/snapshot/lv_example_snapshot_1.c
+.pio/libdeps/esp32dev/lvgl/examples/others/snapshot/lv_example_snapshot_1.py
+.pio/libdeps/esp32dev/lvgl/examples/others/snapshot/lv_example_snapshot.h
+.pio/libdeps/esp32dev/lvgl/examples/porting/lv_port_disp_template.c
+.pio/libdeps/esp32dev/lvgl/examples/porting/lv_port_disp_template.h
+.pio/libdeps/esp32dev/lvgl/examples/porting/lv_port_fs_template.c
+.pio/libdeps/esp32dev/lvgl/examples/porting/lv_port_fs_template.h
+.pio/libdeps/esp32dev/lvgl/examples/porting/lv_port_indev_template.c
+.pio/libdeps/esp32dev/lvgl/examples/porting/lv_port_indev_template.h
+.pio/libdeps/esp32dev/lvgl/examples/scroll/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/scroll/lv_example_scroll_1.c
+.pio/libdeps/esp32dev/lvgl/examples/scroll/lv_example_scroll_1.py
+.pio/libdeps/esp32dev/lvgl/examples/scroll/lv_example_scroll_2.c
+.pio/libdeps/esp32dev/lvgl/examples/scroll/lv_example_scroll_2.py
+.pio/libdeps/esp32dev/lvgl/examples/scroll/lv_example_scroll_3.c
+.pio/libdeps/esp32dev/lvgl/examples/scroll/lv_example_scroll_3.py
+.pio/libdeps/esp32dev/lvgl/examples/scroll/lv_example_scroll_4.c
+.pio/libdeps/esp32dev/lvgl/examples/scroll/lv_example_scroll_4.py
+.pio/libdeps/esp32dev/lvgl/examples/scroll/lv_example_scroll_5.c
+.pio/libdeps/esp32dev/lvgl/examples/scroll/lv_example_scroll_5.py
+.pio/libdeps/esp32dev/lvgl/examples/scroll/lv_example_scroll_6.c
+.pio/libdeps/esp32dev/lvgl/examples/scroll/lv_example_scroll_6.py
+.pio/libdeps/esp32dev/lvgl/examples/scroll/lv_example_scroll.h
+.pio/libdeps/esp32dev/lvgl/examples/styles/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_1.c
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_1.py
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_2.c
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_2.py
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_3.c
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_3.py
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_4.c
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_4.py
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_5.c
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_5.py
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_6.c
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_6.py
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_7.c
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_7.py
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_8.c
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_8.py
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_9.c
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_9.py
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_10.c
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_10.py
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_11.c
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_11.py
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_12.c
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_12.py
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_13.c
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_13.py
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_14.c
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_14.py
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style_15.c
+.pio/libdeps/esp32dev/lvgl/examples/styles/lv_example_style.h
+.pio/libdeps/esp32dev/lvgl/examples/widgets/lv_example_widgets.h
+.pio/libdeps/esp32dev/lvgl/examples/widgets/animimg/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/animimg/lv_example_animimg_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/animimg/lv_example_animimg_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/arc/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/arc/lv_example_arc_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/arc/lv_example_arc_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/arc/lv_example_arc_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/arc/lv_example_arc_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/bar/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/bar/lv_example_bar_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/bar/lv_example_bar_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/bar/lv_example_bar_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/bar/lv_example_bar_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/bar/lv_example_bar_3.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/bar/lv_example_bar_3.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/bar/lv_example_bar_4.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/bar/lv_example_bar_4.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/bar/lv_example_bar_5.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/bar/lv_example_bar_5.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/bar/lv_example_bar_6.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/bar/lv_example_bar_6.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/bar/test.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/btn/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/btn/lv_example_btn_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/btn/lv_example_btn_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/btn/lv_example_btn_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/btn/lv_example_btn_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/btn/lv_example_btn_3.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/btn/lv_example_btn_3.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/btnmatrix/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/btnmatrix/lv_example_btnmatrix_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/btnmatrix/lv_example_btnmatrix_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/btnmatrix/lv_example_btnmatrix_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/btnmatrix/lv_example_btnmatrix_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/btnmatrix/lv_example_btnmatrix_3.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/btnmatrix/lv_example_btnmatrix_3.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/calendar/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/calendar/lv_example_calendar_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/calendar/lv_example_calendar_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/canvas/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/canvas/lv_example_canvas_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/canvas/lv_example_canvas_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/canvas/lv_example_canvas_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/canvas/lv_example_canvas_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_3.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_3.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_4.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_4.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_5.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_5.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_6.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_6.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_7.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_7.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_8.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_8.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_9.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/chart/lv_example_chart_9.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/checkbox/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/checkbox/lv_example_checkbox_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/checkbox/lv_example_checkbox_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/checkbox/lv_example_checkbox_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/colorwheel/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/colorwheel/lv_example_colorwheel_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/colorwheel/lv_example_colorwheel_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/dropdown/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/dropdown/lv_example_dropdown_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/dropdown/lv_example_dropdown_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/dropdown/lv_example_dropdown_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/dropdown/lv_example_dropdown_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/dropdown/lv_example_dropdown_3.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/dropdown/lv_example_dropdown_3.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/img/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/img/lv_example_img_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/img/lv_example_img_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/img/lv_example_img_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/img/lv_example_img_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/img/lv_example_img_3.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/img/lv_example_img_3.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/img/lv_example_img_4.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/img/lv_example_img_4.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/imgbtn/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/imgbtn/lv_example_imgbtn_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/imgbtn/lv_example_imgbtn_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/keyboard/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/keyboard/lv_example_keyboard_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/keyboard/lv_example_keyboard_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/label/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/label/lv_example_label_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/label/lv_example_label_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/label/lv_example_label_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/label/lv_example_label_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/label/lv_example_label_3.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/label/lv_example_label_3.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/label/lv_example_label_4.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/label/lv_example_label_5.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/label/lv_example_label_5.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/led/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/led/lv_example_led_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/led/lv_example_led_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/line/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/line/lv_example_line_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/line/lv_example_line_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/list/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/list/lv_example_list_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/list/lv_example_list_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/list/lv_example_list_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/list/lv_example_list_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/list/test.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/menu/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/menu/lv_example_menu_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/menu/lv_example_menu_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/menu/lv_example_menu_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/menu/lv_example_menu_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/menu/lv_example_menu_3.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/menu/lv_example_menu_3.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/menu/lv_example_menu_4.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/menu/lv_example_menu_4.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/menu/lv_example_menu_5.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/meter/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/meter/lv_example_meter_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/meter/lv_example_meter_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/meter/lv_example_meter_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/meter/lv_example_meter_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/meter/lv_example_meter_3.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/meter/lv_example_meter_3.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/meter/lv_example_meter_4.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/meter/lv_example_meter_4.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/msgbox/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/msgbox/lv_example_msgbox_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/msgbox/lv_example_msgbox_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/obj/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/obj/lv_example_obj_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/obj/lv_example_obj_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/obj/lv_example_obj_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/obj/lv_example_obj_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/roller/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/roller/lv_example_roller_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/roller/lv_example_roller_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/roller/lv_example_roller_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/roller/lv_example_roller_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/roller/lv_example_roller_3.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/roller/lv_example_roller_3.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/slider/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/slider/lv_example_slider_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/slider/lv_example_slider_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/slider/lv_example_slider_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/slider/lv_example_slider_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/slider/lv_example_slider_3.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/slider/lv_example_slider_3.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/span/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/span/lv_example_span_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/span/lv_example_span_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/spinbox/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/spinbox/lv_example_spinbox_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/spinbox/lv_example_spinbox_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/spinner/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/spinner/lv_example_spinner_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/spinner/lv_example_spinner_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/switch/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/switch/lv_example_switch_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/switch/lv_example_switch_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/table/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/table/lv_example_table_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/table/lv_example_table_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/table/lv_example_table_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/table/lv_example_table_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/tabview/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/tabview/lv_example_tabview_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/tabview/lv_example_tabview_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/tabview/lv_example_tabview_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/tabview/lv_example_tabview_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/textarea/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/textarea/lv_example_textarea_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/textarea/lv_example_textarea_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/textarea/lv_example_textarea_2.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/textarea/lv_example_textarea_2.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/textarea/lv_example_textarea_3.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/textarea/lv_example_textarea_3.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/tileview/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/tileview/lv_example_tileview_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/tileview/lv_example_tileview_1.py
+.pio/libdeps/esp32dev/lvgl/examples/widgets/win/index.rst
+.pio/libdeps/esp32dev/lvgl/examples/widgets/win/lv_example_win_1.c
+.pio/libdeps/esp32dev/lvgl/examples/widgets/win/lv_example_win_1.py
+.pio/libdeps/esp32dev/lvgl/scripts/.gitignore
+.pio/libdeps/esp32dev/lvgl/scripts/build_html_examples.sh
+.pio/libdeps/esp32dev/lvgl/scripts/changelog_gen.sh
+.pio/libdeps/esp32dev/lvgl/scripts/changelog-template.hbs
+.pio/libdeps/esp32dev/lvgl/scripts/code-format.cfg
+.pio/libdeps/esp32dev/lvgl/scripts/code-format.py
+.pio/libdeps/esp32dev/lvgl/scripts/cppcheck_run.sh
+.pio/libdeps/esp32dev/lvgl/scripts/Doxyfile
+.pio/libdeps/esp32dev/lvgl/scripts/filetohex.py
+.pio/libdeps/esp32dev/lvgl/scripts/find_version.sh
+.pio/libdeps/esp32dev/lvgl/scripts/genexamplelist.sh
+.pio/libdeps/esp32dev/lvgl/scripts/infer_run.sh
+.pio/libdeps/esp32dev/lvgl/scripts/install-prerequisites.sh
+.pio/libdeps/esp32dev/lvgl/scripts/jpg_to_sjpg.py
+.pio/libdeps/esp32dev/lvgl/scripts/lv_conf_internal_gen.py
+.pio/libdeps/esp32dev/lvgl/scripts/style_api_gen.py
+.pio/libdeps/esp32dev/lvgl/scripts/built_in_font/built_in_font_gen.py
+.pio/libdeps/esp32dev/lvgl/scripts/built_in_font/DejaVuSans.ttf
+.pio/libdeps/esp32dev/lvgl/scripts/built_in_font/FontAwesome5-Solid+Brands+Regular.woff
+.pio/libdeps/esp32dev/lvgl/scripts/built_in_font/generate_all.py
+.pio/libdeps/esp32dev/lvgl/scripts/built_in_font/Montserrat-Medium.ttf
+.pio/libdeps/esp32dev/lvgl/scripts/built_in_font/SimSun.woff
+.pio/libdeps/esp32dev/lvgl/scripts/built_in_font/unscii-8.ttf
+.pio/libdeps/esp32dev/lvgl/scripts/release/com.py
+.pio/libdeps/esp32dev/lvgl/scripts/release/commits.txt
+.pio/libdeps/esp32dev/lvgl/scripts/release/patch.py
+.pio/libdeps/esp32dev/lvgl/scripts/release/release.py
+.pio/libdeps/esp32dev/lvgl/src/lv_api_map.h
+.pio/libdeps/esp32dev/lvgl/src/lv_conf_internal.h
+.pio/libdeps/esp32dev/lvgl/src/lv_conf_kconfig.h
+.pio/libdeps/esp32dev/lvgl/src/lvgl.h
+.pio/libdeps/esp32dev/lvgl/src/core/lv_core.mk
+.pio/libdeps/esp32dev/lvgl/src/core/lv_disp.c
+.pio/libdeps/esp32dev/lvgl/src/core/lv_disp.h
+.pio/libdeps/esp32dev/lvgl/src/core/lv_event.c
+.pio/libdeps/esp32dev/lvgl/src/core/lv_event.h
+.pio/libdeps/esp32dev/lvgl/src/core/lv_group.c
+.pio/libdeps/esp32dev/lvgl/src/core/lv_group.h
+.pio/libdeps/esp32dev/lvgl/src/core/lv_indev_scroll.c
+.pio/libdeps/esp32dev/lvgl/src/core/lv_indev_scroll.h
+.pio/libdeps/esp32dev/lvgl/src/core/lv_indev.c
+.pio/libdeps/esp32dev/lvgl/src/core/lv_indev.h
+.pio/libdeps/esp32dev/lvgl/src/core/lv_obj_class.c
+.pio/libdeps/esp32dev/lvgl/src/core/lv_obj_class.h
+.pio/libdeps/esp32dev/lvgl/src/core/lv_obj_draw.c
+.pio/libdeps/esp32dev/lvgl/src/core/lv_obj_draw.h
+.pio/libdeps/esp32dev/lvgl/src/core/lv_obj_pos.c
+.pio/libdeps/esp32dev/lvgl/src/core/lv_obj_pos.h
+.pio/libdeps/esp32dev/lvgl/src/core/lv_obj_scroll.c
+.pio/libdeps/esp32dev/lvgl/src/core/lv_obj_scroll.h
+.pio/libdeps/esp32dev/lvgl/src/core/lv_obj_style_gen.c
+.pio/libdeps/esp32dev/lvgl/src/core/lv_obj_style_gen.h
+.pio/libdeps/esp32dev/lvgl/src/core/lv_obj_style.c
+.pio/libdeps/esp32dev/lvgl/src/core/lv_obj_style.h
+.pio/libdeps/esp32dev/lvgl/src/core/lv_obj_tree.c
+.pio/libdeps/esp32dev/lvgl/src/core/lv_obj_tree.h
+.pio/libdeps/esp32dev/lvgl/src/core/lv_obj.c
+.pio/libdeps/esp32dev/lvgl/src/core/lv_obj.h
+.pio/libdeps/esp32dev/lvgl/src/core/lv_refr.c
+.pio/libdeps/esp32dev/lvgl/src/core/lv_refr.h
+.pio/libdeps/esp32dev/lvgl/src/core/lv_theme.c
+.pio/libdeps/esp32dev/lvgl/src/core/lv_theme.h
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_arc.c
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_arc.h
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_img.c
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_img.h
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_label.c
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_label.h
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_layer.c
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_layer.h
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_line.c
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_line.h
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_mask.c
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_mask.h
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_rect.c
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_rect.h
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_transform.c
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_transform.h
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_triangle.c
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw_triangle.h
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw.c
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw.h
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_draw.mk
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_img_buf.c
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_img_buf.h
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_img_cache.c
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_img_cache.h
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_img_decoder.c
+.pio/libdeps/esp32dev/lvgl/src/draw/lv_img_decoder.h
+.pio/libdeps/esp32dev/lvgl/src/draw/arm2d/lv_draw_arm2d.mk
+.pio/libdeps/esp32dev/lvgl/src/draw/arm2d/lv_gpu_arm2d.c
+.pio/libdeps/esp32dev/lvgl/src/draw/arm2d/lv_gpu_arm2d.h
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/lv_draw_nxp.mk
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/pxp/lv_draw_nxp_pxp.mk
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/pxp/lv_draw_pxp_blend.c
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/pxp/lv_draw_pxp_blend.h
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/pxp/lv_draw_pxp.c
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/pxp/lv_draw_pxp.h
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.c
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp_osa.h
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp.c
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/pxp/lv_gpu_nxp_pxp.h
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/vglite/lv_draw_nxp_vglite.mk
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/vglite/lv_draw_vglite_arc.c
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/vglite/lv_draw_vglite_arc.h
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.c
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/vglite/lv_draw_vglite_blend.h
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/vglite/lv_draw_vglite_line.c
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/vglite/lv_draw_vglite_line.h
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/vglite/lv_draw_vglite_rect.c
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/vglite/lv_draw_vglite_rect.h
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/vglite/lv_draw_vglite.c
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/vglite/lv_draw_vglite.h
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/vglite/lv_vglite_buf.c
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/vglite/lv_vglite_buf.h
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/vglite/lv_vglite_utils.c
+.pio/libdeps/esp32dev/lvgl/src/draw/nxp/vglite/lv_vglite_utils.h
+.pio/libdeps/esp32dev/lvgl/src/draw/renesas/lv_draw_renesas.mk
+.pio/libdeps/esp32dev/lvgl/src/draw/renesas/lv_gpu_d2_draw_label.c
+.pio/libdeps/esp32dev/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.c
+.pio/libdeps/esp32dev/lvgl/src/draw/renesas/lv_gpu_d2_ra6m3.h
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_arc.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_bg.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_composite.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_composite.h
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_img.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_img.h
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_label.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_layer.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_layer.h
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_line.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_mask.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_mask.h
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_polygon.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_priv.h
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_rect.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_rect.h
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_stack_blur.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_stack_blur.h
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_texture_cache.h
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_utils.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl_utils.h
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl.h
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/lv_draw_sdl.mk
+.pio/libdeps/esp32dev/lvgl/src/draw/sdl/README.md
+.pio/libdeps/esp32dev/lvgl/src/draw/stm32_dma2d/lv_draw_stm32_dma2d.mk
+.pio/libdeps/esp32dev/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.c
+.pio/libdeps/esp32dev/lvgl/src/draw/stm32_dma2d/lv_gpu_stm32_dma2d.h
+.pio/libdeps/esp32dev/lvgl/src/draw/sw/lv_draw_sw_arc.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sw/lv_draw_sw_blend.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sw/lv_draw_sw_blend.h
+.pio/libdeps/esp32dev/lvgl/src/draw/sw/lv_draw_sw_dither.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sw/lv_draw_sw_dither.h
+.pio/libdeps/esp32dev/lvgl/src/draw/sw/lv_draw_sw_gradient.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sw/lv_draw_sw_gradient.h
+.pio/libdeps/esp32dev/lvgl/src/draw/sw/lv_draw_sw_img.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sw/lv_draw_sw_layer.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sw/lv_draw_sw_letter.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sw/lv_draw_sw_line.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sw/lv_draw_sw_polygon.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sw/lv_draw_sw_rect.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sw/lv_draw_sw_transform.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sw/lv_draw_sw.c
+.pio/libdeps/esp32dev/lvgl/src/draw/sw/lv_draw_sw.h
+.pio/libdeps/esp32dev/lvgl/src/draw/sw/lv_draw_sw.mk
+.pio/libdeps/esp32dev/lvgl/src/draw/swm341_dma2d/lv_draw_swm341_dma2d.mk
+.pio/libdeps/esp32dev/lvgl/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.c
+.pio/libdeps/esp32dev/lvgl/src/draw/swm341_dma2d/lv_gpu_swm341_dma2d.h
+.pio/libdeps/esp32dev/lvgl/src/extra/lv_extra.c
+.pio/libdeps/esp32dev/lvgl/src/extra/lv_extra.h
+.pio/libdeps/esp32dev/lvgl/src/extra/lv_extra.mk
+.pio/libdeps/esp32dev/lvgl/src/extra/README.md
+.pio/libdeps/esp32dev/lvgl/src/extra/layouts/lv_layouts.h
+.pio/libdeps/esp32dev/lvgl/src/extra/layouts/flex/lv_flex.c
+.pio/libdeps/esp32dev/lvgl/src/extra/layouts/flex/lv_flex.h
+.pio/libdeps/esp32dev/lvgl/src/extra/layouts/grid/lv_grid.c
+.pio/libdeps/esp32dev/lvgl/src/extra/layouts/grid/lv_grid.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/lv_libs.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/bmp/lv_bmp.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/bmp/lv_bmp.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/freetype/arial.ttf
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/freetype/lv_freetype.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/freetype/lv_freetype.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/fsdrv/lv_fs_fatfs.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/fsdrv/lv_fs_littlefs.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/fsdrv/lv_fs_posix.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/fsdrv/lv_fs_stdio.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/fsdrv/lv_fs_win32.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/fsdrv/lv_fsdrv.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/gif/gifdec.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/gif/gifdec.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/gif/lv_gif.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/gif/lv_gif.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/png/lodepng.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/png/lodepng.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/png/lv_png.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/png/lv_png.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/qrcode/lv_qrcode.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/qrcode/lv_qrcode.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/qrcode/qrcodegen.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/qrcode/qrcodegen.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/rlottie/lv_rlottie.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/rlottie/lv_rlottie.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/sjpg/lv_sjpg.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/sjpg/lv_sjpg.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/sjpg/tjpgd.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/sjpg/tjpgd.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/sjpg/tjpgdcnf.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/tiny_ttf/lv_tiny_ttf.c
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/tiny_ttf/lv_tiny_ttf.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/tiny_ttf/stb_rect_pack.h
+.pio/libdeps/esp32dev/lvgl/src/extra/libs/tiny_ttf/stb_truetype_htcw.h
+.pio/libdeps/esp32dev/lvgl/src/extra/others/lv_others.h
+.pio/libdeps/esp32dev/lvgl/src/extra/others/fragment/lv_fragment_manager.c
+.pio/libdeps/esp32dev/lvgl/src/extra/others/fragment/lv_fragment.c
+.pio/libdeps/esp32dev/lvgl/src/extra/others/fragment/lv_fragment.h
+.pio/libdeps/esp32dev/lvgl/src/extra/others/fragment/README.md
+.pio/libdeps/esp32dev/lvgl/src/extra/others/gridnav/lv_gridnav.c
+.pio/libdeps/esp32dev/lvgl/src/extra/others/gridnav/lv_gridnav.h
+.pio/libdeps/esp32dev/lvgl/src/extra/others/ime/lv_ime_pinyin.c
+.pio/libdeps/esp32dev/lvgl/src/extra/others/ime/lv_ime_pinyin.h
+.pio/libdeps/esp32dev/lvgl/src/extra/others/imgfont/lv_imgfont.c
+.pio/libdeps/esp32dev/lvgl/src/extra/others/imgfont/lv_imgfont.h
+.pio/libdeps/esp32dev/lvgl/src/extra/others/monkey/lv_monkey.c
+.pio/libdeps/esp32dev/lvgl/src/extra/others/monkey/lv_monkey.h
+.pio/libdeps/esp32dev/lvgl/src/extra/others/msg/lv_msg.c
+.pio/libdeps/esp32dev/lvgl/src/extra/others/msg/lv_msg.h
+.pio/libdeps/esp32dev/lvgl/src/extra/others/snapshot/lv_snapshot.c
+.pio/libdeps/esp32dev/lvgl/src/extra/others/snapshot/lv_snapshot.h
+.pio/libdeps/esp32dev/lvgl/src/extra/themes/lv_themes.h
+.pio/libdeps/esp32dev/lvgl/src/extra/themes/basic/lv_theme_basic.c
+.pio/libdeps/esp32dev/lvgl/src/extra/themes/basic/lv_theme_basic.h
+.pio/libdeps/esp32dev/lvgl/src/extra/themes/default/lv_theme_default.c
+.pio/libdeps/esp32dev/lvgl/src/extra/themes/default/lv_theme_default.h
+.pio/libdeps/esp32dev/lvgl/src/extra/themes/mono/lv_theme_mono.c
+.pio/libdeps/esp32dev/lvgl/src/extra/themes/mono/lv_theme_mono.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/lv_widgets.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/animimg/lv_animimg.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/animimg/lv_animimg.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/calendar/lv_calendar_header_arrow.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/calendar/lv_calendar_header_dropdown.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/calendar/lv_calendar.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/calendar/lv_calendar.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/chart/lv_chart.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/chart/lv_chart.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/colorwheel/lv_colorwheel.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/keyboard/lv_keyboard.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/keyboard/lv_keyboard.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/led/lv_led.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/led/lv_led.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/list/lv_list.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/list/lv_list.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/menu/lv_menu.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/menu/lv_menu.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/meter/lv_meter.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/meter/lv_meter.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/msgbox/lv_msgbox.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/msgbox/lv_msgbox.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/span/lv_span.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/span/lv_span.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/spinbox/lv_spinbox.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/spinbox/lv_spinbox.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/spinner/lv_spinner.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/spinner/lv_spinner.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/tabview/lv_tabview.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/tabview/lv_tabview.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/tileview/lv_tileview.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/tileview/lv_tileview.h
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/win/lv_win.c
+.pio/libdeps/esp32dev/lvgl/src/extra/widgets/win/lv_win.h
+.pio/libdeps/esp32dev/lvgl/src/font/korean.ttf
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_dejavu_16_persian_hebrew.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_fmt_txt.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_fmt_txt.h
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_loader.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_loader.h
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_8.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_10.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_12_subpx.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_12.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_14.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_16.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_18.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_20.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_22.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_24.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_26.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_28_compressed.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_28.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_30.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_32.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_34.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_36.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_38.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_40.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_42.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_44.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_46.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_montserrat_48.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_simsun_16_cjk.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_unscii_8.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font_unscii_16.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font.c
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font.h
+.pio/libdeps/esp32dev/lvgl/src/font/lv_font.mk
+.pio/libdeps/esp32dev/lvgl/src/font/lv_symbol_def.h
+.pio/libdeps/esp32dev/lvgl/src/hal/lv_hal_disp.c
+.pio/libdeps/esp32dev/lvgl/src/hal/lv_hal_disp.h
+.pio/libdeps/esp32dev/lvgl/src/hal/lv_hal_indev.c
+.pio/libdeps/esp32dev/lvgl/src/hal/lv_hal_indev.h
+.pio/libdeps/esp32dev/lvgl/src/hal/lv_hal_tick.c
+.pio/libdeps/esp32dev/lvgl/src/hal/lv_hal_tick.h
+.pio/libdeps/esp32dev/lvgl/src/hal/lv_hal.h
+.pio/libdeps/esp32dev/lvgl/src/hal/lv_hal.mk
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_anim_timeline.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_anim_timeline.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_anim.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_anim.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_area.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_area.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_assert.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_async.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_async.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_bidi.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_bidi.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_color.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_color.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_fs.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_fs.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_gc.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_gc.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_ll.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_ll.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_log.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_log.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_lru.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_lru.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_math.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_math.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_mem.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_mem.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_misc.mk
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_printf.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_printf.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_style_gen.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_style_gen.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_style.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_style.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_templ.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_templ.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_timer.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_timer.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_tlsf.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_tlsf.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_txt_ap.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_txt_ap.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_txt.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_txt.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_types.h
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_utils.c
+.pio/libdeps/esp32dev/lvgl/src/misc/lv_utils.h
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_arc.c
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_arc.h
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_bar.c
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_bar.h
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_btn.c
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_btn.h
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_btnmatrix.c
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_btnmatrix.h
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_canvas.c
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_canvas.h
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_checkbox.c
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_checkbox.h
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_dropdown.c
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_dropdown.h
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_img.c
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_img.h
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_label.c
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_label.h
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_line.c
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_line.h
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_objx_templ.c
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_objx_templ.h
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_roller.c
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_roller.h
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_slider.c
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_slider.h
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_switch.c
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_switch.h
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_table.c
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_table.h
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_textarea.c
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_textarea.h
+.pio/libdeps/esp32dev/lvgl/src/widgets/lv_widgets.mk
+.pio/build/esp32dev/tmpdxfj2k3l.tmp
+.pio/libdeps/esp32dev/SensESP@src-d97f3240c1436838ba685042f234cefb
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Memory/MemoryPool.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Memory/MemoryPoolList.hpp
+.pio/libdeps/esp32dev/ArduinoJson/src/ArduinoJson/Variant/VariantImpl.hpp
+.pio/libdeps/esp32dev/SensESP/.clang-tidy
+.pio/libdeps/esp32dev/SensESP/frontend/eslint.config.mjs
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_types.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/signalk/signalk_types.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/types/json.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/types/nullable.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/types/nullable.h
+.pio/build/esp32dev/tmpbc9d8gi2.tmp
+.pio/build/esp32dev/tmpeesqzlpf.tmp
+.pio/build/esp32dev/tmpwv9mboii.tmp
+.pio/build/esp32dev/longcmd-f399059c00b7a4df5e0099aebe259aee
+.pio/libdeps/esp32dev/ReactESP/src/event_loop.cpp
+.pio/libdeps/esp32dev/ReactESP/src/event_loop.h
+.pio/libdeps/esp32dev/ReactESP/src/events.cpp
+.pio/libdeps/esp32dev/ReactESP/src/events.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/saveable.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/saveable.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/semaphore_value.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/system/serializable.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/transforms/debounce.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/ui/config_item.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/ui/config_item.h
+.pio/libdeps/esp32dev/SensESP/src/sensesp/ui/status_page_item.cpp
+.pio/libdeps/esp32dev/SensESP/src/sensesp/ui/status_page_item.h
