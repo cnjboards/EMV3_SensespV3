@@ -11,26 +11,7 @@
 #include <Wifi.h>
 #include "EngineMonitortft320x240.h"
 #include "sensesp.h"
-
-// globals
-extern double AltRPM;
-extern double EngRPM;
-extern double OilPres;
-extern double AltVolts;
-extern double HouseVolts;
-extern double FuelLevel;
-extern double B1A3;
-extern double B2A0;
-extern double B2A1;
-extern double B2A2;
-extern double B2A3;
-extern bool chkEng;
-extern bool digIn2;
-extern double engineCoolantTemp;
-extern double engineBlockTemp;
-extern double engineRoomTemp;
-extern double engineExhaustTemp;
-extern String screenSelect;
+#include "Globals.h"
 
 #if defined ( INCLUDE_TFT )
 
@@ -50,7 +31,6 @@ static void buildRPMGuage(lv_obj_t *);
 static void buildOilGuage(lv_obj_t *);
 static void buildTempGuage(lv_obj_t *);
 static void updateMainScreen(lv_timer_t *);
-static void updateMainScreen_test(lv_timer_t *);
 static void updateStatusBar(lv_timer_t *);
 static void screenSelectHandler();
 
@@ -66,10 +46,6 @@ static lv_style_t label_style;
 #define MS_HIEGHT (tft.height() - 37) // allow for a little room at the sides
 #define MS_WIDTH (tft.width() - 6) 
 #define STATUS_BAR_HIEGHT 30
-
-// push button states
-extern int shortButtonStateLatched;
-extern int longButtonStateLatched;
 
 /* lvgl Display flushing */
 void my_disp_flush( lv_disp_drv_t *disp_drv, const lv_area_t *area, lv_color_t *color_p )
@@ -132,7 +108,6 @@ static lv_obj_t *wifiLabel;
 static lv_obj_t *ipLabel;
 static lv_obj_t *ssidLabel;
 static lv_timer_t *updateMainScreenTimer;
-static lv_timer_t *updateMainScreen_testTimer;
 static lv_timer_t *updateStatusBarTimer;
 static lv_obj_t *statusBar;
 static lv_obj_t *bodyScreen;
@@ -293,12 +268,10 @@ void do_lvgl_init(uint32_t rot){
         buildScreen5();
 
         updateMainScreenTimer = lv_timer_create(updateMainScreen, 1000, NULL);
-        updateMainScreen_testTimer = lv_timer_create(updateMainScreen_test, 2000, NULL);
         updateStatusBarTimer = lv_timer_create(updateStatusBar, 2500, NULL);
         
         // activate main screen
         lv_scr_load(bodyScreen);
-
 
         // build a list for screen navigation and attach to screen 1
         buildScreenList(bodyScreen);
@@ -412,7 +385,7 @@ static void buildStatusBar(lv_obj_t *screenObj) {
 
 } // end buildstatusbar
 
-// helper to update the main display including header bar
+// helper to update the header bar, this is always at the top
 static void updateStatusBar(lv_timer_t *timer)
 {
   char buff[255];
@@ -447,7 +420,7 @@ static void updateStatusBar(lv_timer_t *timer)
   } // end if
 } // end update status bar
 
-// helper to update the display including header bar
+// helper to update the current selected screen
 static void updateMainScreen(lv_timer_t *timer)
 {
   // which screen is active
@@ -493,29 +466,6 @@ static void updateMainScreen(lv_timer_t *timer)
   } else if ( curScrn == Screen5) {
     // do nothing
   } // end if else
-} // end setvalue
-
-// helper to update the main display including header bar
-// debug lv_bar_set_value!
-static void updateMainScreen_test(lv_timer_t *timer)
-{
-#if 0
-digIn2
-  // check if PB pressed and bring up the screen selection list
-  if ( digIn2 != true & digIn2Latched == true){
-    // reset the latched pb
-    digIn2Latched = false;
-    if (lv_obj_has_flag(screenList, LV_OBJ_FLAG_HIDDEN)){
-      // unhide
-      lv_obj_clear_flag(screenList, LV_OBJ_FLAG_HIDDEN);  
-    } else {
-      // hide the list
-      lv_obj_add_flag(screenList, LV_OBJ_FLAG_HIDDEN);
-    } // end else
-  } else if ( digIn2 != true & digIn2Latched == false){{
-    digIn2Latched == true;
-  }// end if
-#endif
 } // end setvalue
 
 // main screen
@@ -679,6 +629,7 @@ static void buildTempGuage(lv_obj_t *screenObj) {
   lv_obj_set_size(tempGuageObject, TEMP_GUAGE_WIDTH, TEMP_GUAGE_HIEGHT);
   lv_obj_add_style(tempGuageObject, &body_style, LV_OBJ_FLAG_HIDDEN);
   lv_obj_set_scrollbar_mode(tempGuageObject, LV_SCROLLBAR_MODE_OFF);
+  lv_obj_add_event_cb(tempGuageObject, event_cb, LV_EVENT_PRESSED, NULL);
 
   // add animated bar
   lv_obj_t * tempGuageBar = lv_bar_create(tempGuageObject);
@@ -729,6 +680,7 @@ static void buildTempGuage(lv_obj_t *screenObj) {
   lv_obj_set_size(battGuageObject, TEMP_GUAGE_WIDTH, TEMP_GUAGE_HIEGHT);
   lv_obj_add_style(battGuageObject, &smallBorder_style, LV_OBJ_FLAG_HIDDEN);
   lv_obj_set_scrollbar_mode(battGuageObject, LV_SCROLLBAR_MODE_OFF);
+  lv_obj_add_event_cb(battGuageObject, event_cb, LV_EVENT_PRESSED, NULL);
 
   // add animated bar
   lv_obj_t * battGuageBar = lv_bar_create(battGuageObject);
@@ -790,7 +742,7 @@ static void buildRPMGuage(lv_obj_t *screenObj) {
   // Locate and set size of rpm guage
   lv_obj_align_to(engineRpmGauge, bodyScreen, LV_ALIGN_CENTER, ENGINE_RPM_GUAGE_XOFFSET, ENGINE_RPM_GUAGE_YOFFSET);
   lv_obj_set_size(engineRpmGauge, RPM_GUAGE_WIDTH, RPM_GUAGE_HIEGHT);
-  
+  lv_obj_add_event_cb(engineRpmGauge, event_cb, LV_EVENT_PRESSED, NULL);
 
   /*Add a scale first*/
   lv_meter_scale_t * scale = lv_meter_add_scale(engineRpmGauge);
@@ -852,7 +804,8 @@ static void buildOilGuage(lv_obj_t *screenObj) {
   // set the size
   lv_obj_set_size(engineOilGauge, ENGINE_OIL_GUAGE_WIDTH, ENGINE_OIL_GUAGE_HIEGHT);
   lv_obj_align_to(engineOilGauge, bodyScreen, LV_ALIGN_CENTER, ENGINE_OIL_GUAGE_XOFFSET, ENGINE_OIL_GUAGE_YOFFSET);
-  
+  lv_obj_add_event_cb(engineOilGauge, event_cb, LV_EVENT_PRESSED, NULL);
+
   /*Add a scale first*/
   lv_meter_scale_t * scale = lv_meter_add_scale(engineOilGauge);
   lv_meter_set_scale_range(engineOilGauge, scale, 0, 80, 180, 180);
