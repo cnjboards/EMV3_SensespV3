@@ -31,3 +31,4 @@
 *.out
 *.app
 .pio/*
+/.pio/build/esp32dev/*.tmp
