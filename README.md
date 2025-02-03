@@ -11,12 +11,12 @@ you will need to make some manual changes prior to building the code. All of the
 
 Step 1: Add lv_conf.h 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the directory "src\extras" copy the file "lv_conf.h.custom" into the directory ".pio\libdeps\esp32dev" and rename it to "lv_conf.h". 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the directory "src\extras" copy the file "lv_conf.h.extra" into the directory ".pio\libdeps\esp32dev" and rename it to "lv_conf.h". 
 
 
 Step 2: Replace User_Setup.h
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the directory "src\extras" copy the file "User_Setup.h.custom" into the directory ".pio\libdeps\esp32dev\TFT_eSPI". There is already a file called "User_Setup.h" in this directory which needs to be deleted. Now rename "User_Setup.h.custom" to "User_Setup.h"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the directory "src\extras" copy the file "User_Setup.h.extra" into the directory ".pio\libdeps\esp32dev\TFT_eSPI". There is already a file called "User_Setup.h" in this directory which needs to be deleted. Now rename "User_Setup.h.custom" to "User_Setup.h"
 
 
 Step 3: Modify analog_reader.h
