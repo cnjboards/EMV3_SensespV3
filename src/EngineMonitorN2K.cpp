@@ -105,7 +105,7 @@ void SendN2kEngine() {
   tN2kEngineDiscreteStatus2 Status2=0;
   if ( EngineRapidScheduler.IsTime() ) {
     EngineRapidScheduler.UpdateNextTime();
-    SetN2kEngineParamRapid ( N2kMsg , 0 , EngRPM, N2kDoubleNA, N2kInt8NA );
+    SetN2kEngineParamRapid ( N2kMsg , n2kInstance, EngRPM, N2kDoubleNA, N2kInt8NA );
     NMEA2000.SendMsg(N2kMsg);
   } // endif
 
@@ -120,7 +120,7 @@ void SendN2kEngine() {
     Status2.Bits.MaintenanceNeeded = 0;
 
     // use engine temp as oil temp for now
-    SetN2kEngineDynamicParam ( N2kMsg , 0 , OilPres, engineBlockTemp, engineCoolantTemp, AltVolts,
+    SetN2kEngineDynamicParam ( N2kMsg , n2kInstance, OilPres, engineBlockTemp, engineCoolantTemp, AltVolts,
                                N2kDoubleNA , N2kDoubleNA , N2kDoubleNA , N2kDoubleNA , N2kInt8NA , N2kInt8NA , Status1 , Status2 );
 
     NMEA2000.SendMsg(N2kMsg);
@@ -133,7 +133,7 @@ void SendN2kBattery() {
   tN2kMsg N2kMsg;
   if ( BatteryStatusScheduler.IsTime() ) {
     BatteryStatusScheduler.UpdateNextTime();
-    SetN2kDCBatStatus(N2kMsg, 0, HouseVolts, 0/*BatteryCurrent=N2kDoubleNA*/,
+    SetN2kDCBatStatus(N2kMsg, n2kInstance, AltVolts, 0/*BatteryCurrent=N2kDoubleNA*/,
                      0/*BatteryTemperature=N2kDoubleNA*/, 0xff);
     NMEA2000.SendMsg(N2kMsg);
   } // endif
@@ -147,10 +147,10 @@ void SendN2kTemperature() {
   if ( TemperatureScheduler.IsTime() ) {
     TemperatureScheduler.UpdateNextTime();
     //SetN2kTemperature(N2kMsg, 1, 1, N2kts_MainCabinTemperature, ReadCabinTemp());
-    SetN2kTemperatureExt(N2kMsg, 255, 1, N2kts_EngineRoomTemperature, engineRoomTemp, N2kDoubleNA);
+    SetN2kTemperatureExt(N2kMsg, 255, n2kInstance, N2kts_EngineRoomTemperature, engineRoomTemp, N2kDoubleNA);
     NMEA2000.SendMsg(N2kMsg);
     delay(50); // probably not neccessary
-    SetN2kTemperatureExt(N2kMsg, 255, 1, N2kts_ExhaustGasTemperature, engineExhaustTemp, N2kDoubleNA);
+    SetN2kTemperatureExt(N2kMsg, 255, n2kInstance, N2kts_ExhaustGasTemperature, engineExhaustTemp, N2kDoubleNA);
     NMEA2000.SendMsg(N2kMsg);
   } // endif
 
@@ -163,7 +163,7 @@ void SendN2kTankLevel() {
   if ( FuelTankLevelScheduler.IsTime() ) {
     // fuel level
     FuelTankLevelScheduler.UpdateNextTime();
-    SetN2kFluidLevel(N2kMsg, 0, N2kft_Fuel, FuelLevel, 75.7);
+    SetN2kFluidLevel(N2kMsg, n2kInstance, N2kft_Fuel, FuelLevel, 75.7);
     NMEA2000.SendMsg(N2kMsg);
   } // end if
 } // end send2ktanklevel

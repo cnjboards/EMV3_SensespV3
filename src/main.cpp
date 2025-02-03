@@ -79,6 +79,9 @@ bool signalKConnected = false;
 // unique chip id
 int32_t chipId=0;
 
+// used for n2k instance field in messages
+int32_t n2kInstance;
+
 // used for N2K Messages
 double AltRPM = 0;
 double EngRPM = 0;
@@ -183,6 +186,29 @@ screenSelector
           new LambdaConsumer<String>([](String AltScreenSelect) {
             screenSelect = AltScreenSelect;
           }));
+
+	// Allow the n2k instance to be changed
+	const char *n2kInstanceSKPath = "/n2k/Instance/sk_path";
+	auto n2kInst = new StringConstantSensor("0", 1, "/n2k/Instance");
+
+	ConfigItem(n2kInst)
+		  ->set_title("N2K Instance")
+		  ->requires_restart();
+
+	n2kInst 
+	  ->connect_to(new SKOutputString(
+				"/n2k/Instance/sk_path",         // Signal K path
+				n2kInstanceSKPath,        
+														// web UI and for storing the
+														// configuration
+				new SKMetadata("Number",          // Define output units
+							  "n2k Instance")))  // Value description
+	  
+	  ->connect_to(
+				new LambdaConsumer<String>([](String Altn2kInstance) {
+				  n2kInstance = Altn2kInstance.toInt();
+				}));
+
     
   //************* ads1115 I2C section **************************************************
   // setup ads1115 on I2C bus, ads1115 is 16bit a/d. Raw inputs should not exceed 3.3V
