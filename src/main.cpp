@@ -27,6 +27,7 @@
 #include "sensesp/transforms/hysteresis.h"
 #include "sensesp/transforms/enable.h"
 #include "sensesp_app_builder.h"
+#include "sensesp/system/local_debug.h" // Include for debug macros
 
 // specific to this design
 #include "EngineMonitorHardware.h"
@@ -69,8 +70,10 @@ float read_adsB2_ch3_callback() { return (adsB2 . computeVolts ( adsB2 . readADC
 void setupADS1115();
 void checkButton(void);
 
-extern void do_lvgl_init(uint32_t );
-extern void processDisplay(void);
+#if defined (INCLUDE_TFT)
+  extern void do_lvgl_init(uint32_t );
+  extern void processDisplay(void);
+#endif
 
 DallasTemperatureSensors* dts;
 int numberOfDevices = 3;
@@ -81,6 +84,9 @@ int32_t chipId=0;
 
 // used for n2k instance field in messages
 int32_t n2kInstance;
+
+// Used to determine temp display units
+int32_t tUnits;
 
 // used for N2K Messages
 double AltRPM = 0;
@@ -192,8 +198,8 @@ screenSelector
 	auto n2kInst = new StringConstantSensor("0", 1, "/n2k/Instance");
 
 	ConfigItem(n2kInst)
-		  ->set_title("N2K Instance")
-		  ->requires_restart();
+		  ->set_title("N2K Instance");
+		  //->requires_restart();
 
 	n2kInst 
 	  ->connect_to(new SKOutputString(
@@ -209,7 +215,29 @@ screenSelector
 				  n2kInstance = Altn2kInstance.toInt();
 				}));
 
-    
+// Allow temp display units to be changed
+// 0 - deg F, 1 - deg C
+const char *tUnitsSKPath = "/units/tUnits/sk_path";
+auto tUnitsInst = new StringConstantSensor("0", 1, "/units/TempUnit");
+
+ConfigItem(tUnitsInst)
+    ->set_title("Temperature Units 0-degF 1-degC");
+
+tUnitsInst 
+  ->connect_to(new SKOutputString(
+      "/units/tUnits/sk_path",         // Signal K path
+      tUnitsSKPath,        
+                          // web UI and for storing the
+                          // configuration
+      new SKMetadata("Number",          // Define output units
+              "TempUnits")))  // Value description
+  
+  ->connect_to(
+      new LambdaConsumer<String>([](String AlttUnits) {
+        tUnits = AlttUnits.toInt();
+        debugI("tUnits (Connect_to): %i" , tUnits);
+      }));
+
   //************* ads1115 I2C section **************************************************
   // setup ads1115 on I2C bus, ads1115 is 16bit a/d. Raw inputs should not exceed 3.3V
   // Bank 1 (B1) has resitor divider networks on each input to allow for a maximum input voltage
@@ -519,7 +547,7 @@ screenSelector
         debugD("Analog input adsB2_3 value: %f Raw Volts", analog_input_adsB2_3->get());
       });
 #endif
-//*****************end ads115 I2C
+//*****************end ads1115 I2C
 
   // **************** engine rpm
   //const char *kEngineRPMInputConfig = "/Engine RPM/DigialInput";
@@ -527,12 +555,11 @@ screenSelector
   const char *kEngineRPMSKPath = "/propulsion/engine RPM/sk_path";
   const float multiplier = ((1.0/numberPoles)*60.0);
   const float engmultiplier = multiplier * (1.63/pulleyRatio);
+  const char *kEngineRPMDelaySKPath = "/propulsion/engine RPM Delay/sk_path";
   const unsigned int rpm_read_delay = 500;
 
   // setup input pin for rpm pulse
-  pinMode ( Engine_RPM_Pin , INPUT_PULLUP );
-  //auto* rpmSensor = new DigitalInputCounter(Engine_RPM_Pin, INPUT_PULLUP, RISING, rpm_read_delay, kEngineRPMInputConfig);
-  auto rpmSensor = new DigitalInputCounter(Engine_RPM_Pin, INPUT_PULLUP, RISING, rpm_read_delay);
+  auto rpmSensor = new DigitalInputCounter(Engine_RPM_Pin, INPUT_PULLUP, RISING, rpm_read_delay, kEngineRPMDelaySKPath);
 
   auto rpmSensorFreq =new Frequency(engmultiplier, kEngineRPMCalibrate);
   ConfigItem(rpmSensorFreq)
@@ -583,7 +610,7 @@ const float OilPmultiplier = 228;
 const float OilPoffset = -82080;
 
 // Oil Pressure ESP32 Analog Input
-auto analog_input = new AnalogInput(OIL_PRESSURE, 500, kOilPressureADCConfigPath, 4096);
+auto analog_input = new AnalogInput(OIL_PRESSURE, 500, kOilPressureADCConfigPath, 1); // chnage scale to 1 in sensesp v3.1
 
 auto analog_input_linear = new Linear(OilPmultiplier, OilPoffset, kOilPressureLinearConfigPath);
 ConfigItem(analog_input_linear)
@@ -593,7 +620,10 @@ analog_input
       // scale using linear transform
       ->connect_to(analog_input_linear)
       // send to SK, value is in Pa
-      ->connect_to(new SKOutputFloat("/propulsion/oil pressure", kOilPressureSKPath))
+      ->connect_to(new SKOutputFloat("/propulsion/oil pressure", kOilPressureSKPath,
+        new SKMetadata("Kpa",                     // Define output units
+          "Oil Pressure Kpa")))  // Value description
+
       // for N2K use, value is in Pa
       ->connect_to(
         new LambdaConsumer<float>([](float engOilPresValue) {
@@ -700,7 +730,9 @@ digitalInput1
   engineTemp
       ->connect_to(engineTempLinear)
       ->connect_to(new SKOutputFloat("/propulsion/engine temperature",
-                                     kOWEngineTempSKPath))
+                                     kOWEngineTempSKPath,
+                                     new SKMetadata("Kelvin",                     // Define output units
+                                      "Temperature Kelvin")))  // Value description
 
       ->connect_to(
       new LambdaConsumer<float>([](float engineBlockTempValue) {
@@ -725,7 +757,9 @@ digitalInput1
   exhaustTemp
     ->connect_to(exhaustTempLinear)
     ->connect_to(new SKOutputFloat("/propulsion/exhaust temperature",
-                                     kOWExhaustTempSKPath))
+                                     kOWExhaustTempSKPath,
+                                     new SKMetadata("Kelvin",                     // Define output units
+                                      "Temperature Kelvin")))
 
     ->connect_to(
             new LambdaConsumer<float>([](float engineExhaustTempValue) {
@@ -751,7 +785,9 @@ digitalInput1
   engineRoom
       ->connect_to(engineRoomLinear)
       ->connect_to(new SKOutputFloat("/sensors/engine room temperature",
-                                     kOWEngineRoomTempSKPath))
+                                     kOWEngineRoomTempSKPath,
+                                     new SKMetadata("Kelvin",                     // Define output units
+                                      "Temperature Kelvin")))  // Value description
 
       ->connect_to(
           new LambdaConsumer<float>([](float engineRoomTempValue) {
@@ -776,7 +812,9 @@ digitalInput1
   coolantTemp
       ->connect_to(coolantTempLinear)
       ->connect_to(new SKOutputFloat("/propulsion/coolant temperature",
-                                     kOWCoolantTempSKPath))
+                                     kOWCoolantTempSKPath,
+                                     new SKMetadata("Kelvin",                     // Define output units
+                                      "Temperature Kelvin")))  // Value description
 
       ->connect_to(
       new LambdaConsumer<float>([](float engineCoolantTempValue) {
@@ -800,7 +838,9 @@ digitalInput1
 
   PCBTemp->connect_to(PCBTempLinear)
       ->connect_to(new SKOutputFloat("/sensors/PCB temperature",
-                                     kOWPCBTempSKPath));
+                                     kOWPCBTempSKPath,
+                                     new SKMetadata("Kelvin",                     // Define output units
+                                      "Temperature Kelvin")));  // Value description
 
 // ************* end onewire temp sensors
 
@@ -828,9 +868,10 @@ void loop() {
   // changed for V3
   static auto event_loop = SensESPBaseApp::get_event_loop();
   event_loop->tick();
-
+  
   // see is pb is pushed
   checkButton();
+
 } // end loop
 
 // Initialize the ADS1115 module(s)

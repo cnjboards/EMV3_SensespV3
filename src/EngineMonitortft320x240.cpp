@@ -439,14 +439,29 @@ static void updateMainScreen(lv_timer_t *timer)
     // display oil pressure psi
     lv_label_set_text_fmt(engineOilIndicator, " %03d ", locOilP);
 
-    // Engine temp
-    // (296K − 273.15) × 9/5 + 32
-    int32_t locEngTemp = (int32_t)((((engineCoolantTemp-273.15)*(9.0/5.0))+32.0));
-    if (tempGuageBar_shadow != NULL) {
-      lv_bar_set_value(tempGuageBar_shadow, locEngTemp, LV_ANIM_ON);
-      lv_obj_invalidate(tempGuageBar_shadow);
+    // check which units to display
+    // a non zero value is for degC
+    if (tUnits != 0) {
+      // Engine temp in degC
+      // degK - 273.15 = degC
+      int32_t locEngTemp = (int32_t)(engineCoolantTemp-273.15);
+      if (tempGuageBar_shadow != NULL) {
+        lv_bar_set_value(tempGuageBar_shadow, locEngTemp, LV_ANIM_ON);
+        lv_obj_invalidate(tempGuageBar_shadow);
+      }
+      lv_label_set_text_fmt(tempGuageIndicator, " %03d ", locEngTemp);
+      lv_label_set_text(tempGuageText,"°C");
+    } else {
+      // Engine temp in degF
+      // (296K − 273.15) × 9/5 + 32
+      int32_t locEngTemp = (int32_t)((((engineCoolantTemp-273.15)*(9.0/5.0))+32.0));
+      if (tempGuageBar_shadow != NULL) {
+        lv_bar_set_value(tempGuageBar_shadow, locEngTemp, LV_ANIM_ON);
+        lv_obj_invalidate(tempGuageBar_shadow);
+      }
+      lv_label_set_text_fmt(tempGuageIndicator, " %03d ", locEngTemp);
+      lv_label_set_text(tempGuageText,"°F");
     }
-    lv_label_set_text_fmt(tempGuageIndicator, " %03d ", locEngTemp);
 
     // Alternator Voltage
     int32_t locEngVoltage = (int32_t)(AltVolts * 10);
@@ -638,19 +653,17 @@ static void buildTempGuage(lv_obj_t *screenObj) {
   lv_obj_remove_style_all(tempGuageBar);  /*To have a clean start*/
   lv_obj_add_style(tempGuageBar, &vertBarStyle, 0);
   lv_obj_add_style(tempGuageBar, &vertBarStyleIndic, LV_PART_INDICATOR);
-  
-  lv_bar_set_range(tempGuageBar, 0, 150);
+  lv_bar_set_range(tempGuageBar, 0, 200);
+
   //lv_obj_add_event_cb(tempGuageBar, tempGuageBar_event_cb, LV_EVENT_DRAW_PART_END, NULL);
   lv_obj_set_size(tempGuageBar, 15, TEMP_GUAGE_HIEGHT-30);
   lv_obj_align_to(tempGuageBar, tempGuageObject, LV_ALIGN_BOTTOM_MID, 10, -10);
-  lv_bar_set_value(tempGuageBar, (int32_t)(76/*getOwTempValues(3)*/), LV_ANIM_ON);
-
+  lv_bar_set_value(tempGuageBar, (int32_t)(76/*getOwTempValues(3)*/), LV_ANIM_ON); // initial value
   /* some static text on the display */
   tempGuageText = lv_label_create(tempGuageObject);
   lv_obj_align_to(tempGuageText, tempGuageObject, LV_ALIGN_BOTTOM_MID, 22, TEMP_GUAGE_YOFFSET_TXT-1);
-  lv_label_set_text(tempGuageText,"°F");
 
-  /* display the rpm in numerical format as well */
+  /* display the temp in numerical format as well */
   tempGuageIndicator = lv_label_create(tempGuageObject);
   lv_obj_add_style(tempGuageIndicator, &indicator_style, 0);
   lv_obj_set_style_text_font(tempGuageIndicator, &lv_font_montserrat_12, 0);
@@ -662,17 +675,16 @@ static void buildTempGuage(lv_obj_t *screenObj) {
   lv_obj_set_style_text_font(tempGuageBarTextLower, &lv_font_montserrat_10, 0);
   lv_obj_align_to(tempGuageBarTextLower, tempGuageObject, LV_ALIGN_BOTTOM_MID, -4, -10);
   lv_label_set_text(tempGuageBarTextLower,"0");
-  
+
   tempGuageBarTextMid = lv_label_create(tempGuageObject);
   lv_obj_set_style_text_font(tempGuageBarTextMid, &lv_font_montserrat_10, 0);
   lv_obj_align_to(tempGuageBarTextMid, tempGuageObject, LV_ALIGN_BOTTOM_MID, -7, -45);
-  lv_label_set_text(tempGuageBarTextMid,"075");
+  lv_label_set_text(tempGuageBarTextMid,"100");
 
   tempGuageBarTextUpper = lv_label_create(tempGuageObject);
   lv_obj_set_style_text_font(tempGuageBarTextUpper, &lv_font_montserrat_10, 0);
   lv_obj_align_to(tempGuageBarTextUpper, tempGuageObject, LV_ALIGN_BOTTOM_MID, -7, -80);
-  lv_label_set_text(tempGuageBarTextUpper,"150");
-
+  lv_label_set_text(tempGuageBarTextUpper,"200");  
 
   // start with base object, turn on border. Everything is within object so can be moved
   battGuageObject = lv_obj_create(bodyScreen);

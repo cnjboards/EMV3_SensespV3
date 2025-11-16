@@ -6,6 +6,9 @@ extern int32_t chipId;
 // instance to use for N2K messages
 extern int32_t n2kInstance;
 
+// used for Temp Units display
+extern int32_t tUnits;
+
 // used for N2K Messages
 extern double AltRPM;
 extern double EngRPM;
