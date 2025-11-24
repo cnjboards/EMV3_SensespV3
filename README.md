@@ -2,7 +2,7 @@
 <img src="https://github.com/user-attachments/assets/8523d30d-3f78-414c-9345-2c325a261c58" width="450" height="350">
 
 
-This repository contains example code for an Marine Engine Monitor based on SensEsp V3 and CNJBoards EMV3 hardware. EMV3 is based on a ESP32-WROOM-32 module so the software could easily be adapted to most ESP32 based designs. Schematics of the EMV3 are provided for reference. 
+This repository contains example code for an Marine Engine Monitor based on SensEsp V3 and CNJBoards EMV3 hardware. EMV3 is based on a ESP32-WROOM-32 module so the software could easily be adapted to most ESP32 based designs. Schematics of the EMV3 are provided for reference. More information on the EMV3 hardware can be found here https://www.tindie.com/products/cnjboards/engine-monitor-lite-nmea2000can-bus/
 
 This code base has examples of a SensEspV3 application with:
 - high speed digital input for RPM measurement
