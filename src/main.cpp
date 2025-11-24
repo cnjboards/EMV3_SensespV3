@@ -40,8 +40,6 @@
 using namespace sensesp;
 using namespace sensesp::onewire;
 
-//reactesp::ReactESP app;
-
 // ADS1115 Module Instantiation
 // ADS1115 @ 0x48 I2C
 Adafruit_ADS1115 adsB1;
@@ -69,6 +67,7 @@ float read_adsB2_ch3_callback() { return (adsB2 . computeVolts ( adsB2 . readADC
 // forward declarations
 void setupADS1115();
 void checkButton(void);
+void chkEngineAlarms(void);
 
 #if defined (INCLUDE_TFT)
   extern void do_lvgl_init(uint32_t );
@@ -101,6 +100,13 @@ double B2A1 = 0;
 double B2A2 = 0;
 double B2A3 = 0;
 bool chkEng = 0;
+uint8_t dBnce = 0;
+bool engineOverTemperature=0;
+bool engineLowOilPressure=0;
+bool engineRunning=0;
+int engRunRpm;
+int engTempAlarm;
+double engOilAlarm;
 bool digIn2 = 0;
 double engineCoolantTemp = 0;
 double engineBlockTemp = 0;
@@ -237,6 +243,74 @@ tUnitsInst
         tUnits = AlttUnits.toInt();
         debugI("tUnits (Connect_to): %i" , tUnits);
       }));
+
+// RPM setting to define when engine is running
+const char *engRunRpmSKPath = "/control/engRunRpm/sk_path";
+auto engRunRpmInst = new StringConstantSensor("800", 1, "/control/engRunRpm");
+
+ConfigItem(engRunRpmInst)
+    ->set_title("Engine Running Threshold in RPM");
+
+engRunRpmInst 
+  ->connect_to(new SKOutputString(
+      "/control/engRunRpm/sk_path",         // Signal K path
+      engRunRpmSKPath,        
+                          // web UI and for storing the
+                          // configuration
+      new SKMetadata("Number",          // Define output units
+              "RPM")))  // Value description
+  
+  ->connect_to(
+      new LambdaConsumer<String>([](String tempInst) {
+        engRunRpm = (int)(tempInst.toInt());
+        debugI("engRunRpm is: %i" , engRunRpm);
+      }));
+
+  // Engine Temperature alarm setting
+  const char *engTempAlarmSKPath = "/control/engTempAlarm/sk_path";
+  auto engTempAlarmInst = new StringConstantSensor("195", 1, "/control/engTempAlarm");
+
+  ConfigItem(engTempAlarmInst)
+      ->set_title("Engine Temperature Alarm Threshold in degF");
+
+  engTempAlarmInst 
+    ->connect_to(new SKOutputString(
+        "/control/engTempAlarm/sk_path",         // Signal K path
+        engTempAlarmSKPath,        
+                            // web UI and for storing the
+                            // configuration
+        new SKMetadata("Number",          // Define output units
+                "Degrees F")))  // Value description
+    
+    ->connect_to(
+        new LambdaConsumer<String>([](String tempInst) {
+          // convert to kelvin degF-32*5/9 + 273.15...
+          engTempAlarm = (int)((tempInst.toFloat() - 32.0) * (5.0 / 9.0) + 273.15);
+          debugI("engTempAlarm is: %i" , engTempAlarm);
+        }));
+
+  // Engine pressure alarm setting
+  const char *engOilAlarmSKPath = "/control/engOilAlarm/sk_path";
+  auto engOilAlarmInst = new StringConstantSensor("15", 1, "/control/engOilAlarm");
+
+  ConfigItem(engOilAlarmInst)
+      ->set_title("Engine Oil Low Pressure Alarm Threshold in Psi");
+
+  engOilAlarmInst 
+    ->connect_to(new SKOutputString(
+        "/control/engOilAlarm/sk_path",         // Signal K path
+        engOilAlarmSKPath,        
+                            // web UI and for storing the
+                            // configuration
+        new SKMetadata("Number",          // Define output units
+                "Psi")))  // Value description
+    
+    ->connect_to(
+        new LambdaConsumer<String>([](String tempInst) {
+          // convert to Kpa, native value of oil pressure is Kpa
+          engOilAlarm = tempInst.toFloat() * 6894.75;
+          debugI("engOilAlarm is: %f" , engOilAlarm);
+        }));
 
   //************* ads1115 I2C section **************************************************
   // setup ads1115 on I2C bus, ads1115 is 16bit a/d. Raw inputs should not exceed 3.3V
@@ -653,7 +727,7 @@ auto digitalInput1Enable = new Enable<bool>(true, kCheckEngineEnableSKPath);
 ConfigItem(digitalInput1Enable)
       ->set_title("Check Engine Alarm Enable");
 
-// INput 1 send out to SK
+// Input 1 send out to SK
 digitalInput1
   
   // bool to enable/disable the check engine
@@ -666,8 +740,7 @@ digitalInput1
                     "Digital Input High Temp/Low Oil Pres")  // Value description
     ))
   
-  ->connect_to(
-    new LambdaConsumer<bool>([](bool checkEngineValue) {
+  ->connect_to(new LambdaConsumer<bool>([](bool checkEngineValue) {
       chkEng = checkEngineValue;
     }));
 
@@ -859,9 +932,11 @@ digitalInput1
     #endif
 
     // setup an onrepeat to update the display regularly
-    SensESPBaseApp::get_event_loop()->onRepeat(100, []() { processDisplay(); });
+    SensESPBaseApp::get_event_loop()->onRepeat(250, []() { processDisplay(); });
   #endif
 
+  // setup an onrepeat to check engine alarms, do every second
+  SensESPBaseApp::get_event_loop()->onRepeat(1000, []() { chkEngineAlarms(); });
 } // end setup
 
 void loop() { 					 
@@ -978,3 +1053,42 @@ void checkButton(void){
   // save the reading. Next time through the loop, it'll be the lastButtonState:
   lastButtonState = reading;
 } // end checkButton
+
+// check for any alarms and set bits
+// called periodically
+void chkEngineAlarms(){
+
+  // first create an engine running flag, only alarms if engine is running
+  if ((int)EngRPM >= engRunRpm) {
+    if (dBnce++ >= 3) {
+      engineRunning = true;
+      dBnce = 3;
+    } // end if
+  } else {
+    dBnce = 0;
+    engineRunning = false;
+  } // end if
+
+  // now check if we have engine temp alarm
+  if (engineRunning == true){
+    if ((int)engineCoolantTemp >= engTempAlarm) {
+      engineOverTemperature = true;
+    } else if ((int)engineCoolantTemp < (engTempAlarm - 10)) {
+      engineOverTemperature = false;
+    } // end if
+  } else {
+    engineOverTemperature = false;
+  }// end if 
+
+  // now check if we have low oil pressure
+  if (engineRunning == true){
+    if (OilPres <= engOilAlarm) {
+      engineLowOilPressure = true;
+    } else if (OilPres > (engOilAlarm + 21000)) {
+      engineLowOilPressure = false;
+    } // end if
+  } else {
+    engineLowOilPressure = false;
+  }// end if 
+
+} // end check_engine_alarms

@@ -112,11 +112,10 @@ void SendN2kEngine() {
   if ( EngineDynamicScheduler.IsTime() ) {
     EngineDynamicScheduler.UpdateNextTime();
     
-    // if this bit is set then check engine alarm pops up on the screen
-    // this is double reversed, in PCB h/w and on the engine.
-    // low at the terminal is high in the processor
-    // low at the terminal is alarm state.
+    // set some status bits for various alarms
     Status1.Bits.CheckEngine = chkEng;
+    Status1.Bits.OverTemperature = engineOverTemperature;
+    Status1.Bits.LowOilPressure = engineLowOilPressure;
     Status2.Bits.MaintenanceNeeded = 0;
 
     // use engine temp as oil temp for now

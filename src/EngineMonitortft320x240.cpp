@@ -1,4 +1,4 @@
-#define INCLUDE_TFT
+// #define INCLUDE_TFT
 
 // Generic Arduino
 #include <Arduino.h>
@@ -235,7 +235,7 @@ void do_lvgl_init(uint32_t rot){
     lv_tc_indev_drv_init(&indev_drv, my_touchpad_read);
     lv_indev_drv_register( &indev_drv );
 
-    //#define ERASE_TC_CAL
+   // #define ERASE_TC_CAL
    // this will force a recalibration by erasing the nvs data
    #if defined (ERASE_TC_CAL)
         // always erase cal data - remove later
